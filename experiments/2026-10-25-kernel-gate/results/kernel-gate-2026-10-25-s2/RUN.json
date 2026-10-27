@@ -1,0 +1,17 @@
+{
+  "run_id": "kernel-gate-2026-10-25-s2",
+  "spec": "experiments/2026-10-25-kernel-gate/spec_s2.py",
+  "spec_git": "78407ff",
+  "finished": "2026-10-26T17:27:06+00:00",
+  "python": "3.13.12",
+  "cells_total": 40,
+  "cells_computed": 40,
+  "cells_reused": 0,
+  "grid_seconds": 14426.4,
+  "controls": [
+    "algebra: T_pq vs quadrature, p+q<=6",
+    "gaussian law: candidate and CF equal arc-cosine",
+    "symmetry, homogeneity, rho->+-1 limits",
+    "CF reference agrees with independent QMC"
+  ]
+}

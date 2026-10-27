@@ -1,0 +1,9 @@
+{
+  "evidence/projected_refined/analysis.json": "549c53db871b64ed66fc05887bb378fbbbbb477bb0e70c2753f3766e6fdee742",
+  "evidence/projected_refined/summary.csv": "130cdf5934c53591a7127c8890337f50f277b457ea9d8c18ba3e4e9dc5dab5a7",
+  "evidence/projected_refined/comparisons.csv": "a4a7eb40b5a3324f226d33469e823a0a80e18569563deb326559863c66989890",
+  "evidence/projected_refined/verification.json": "d24324af573625950424272e005fa56aa45166106c71c16315698c644ec89ad7",
+  "PROJECTED_REFINED_REPORT_UA.md": "a030f30c5e659c5bbe479d6d5ecce01437c6c70ee85c4c0ec25bfe90207ad112",
+  "scripts/projected_report.py": "a2d686f9d628f4e6ac7cb84134944435342af4b53258c576937176cb42ef3d30",
+  "scripts/projected_verify.py": "b64514db336e9c206592641a44d95063058100c968433810c6a2023437c2701d"
+}

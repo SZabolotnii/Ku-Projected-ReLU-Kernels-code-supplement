@@ -1,0 +1,36 @@
+{
+  "cell": "d=16_geometry=dense_law=uniform_n=32_panel=0_part=accuracy__ed031230",
+  "params": {
+    "d": 16,
+    "geometry": "dense",
+    "law": "uniform",
+    "n": 32,
+    "panel": 0,
+    "part": "accuracy"
+  },
+  "seconds": 3.502,
+  "values": {
+    "candidate_allowance": 0.001738310565488549,
+    "candidate_error": 0.0017255616150444455,
+    "candidate_maxabs": 0.0013378611471328017,
+    "candidate_mineig": 0.006877892799799455,
+    "fourth_allowance": 0.001738310565488549,
+    "fourth_error": 0.0017255616150444455,
+    "fourth_maxabs": 0.0013378611471328017,
+    "fourth_mineig": 0.006877892799799455,
+    "gaussian_allowance": 0.007358250289783792,
+    "gaussian_error": 0.007345429815337573,
+    "gaussian_maxabs": 0.005049651026400648,
+    "gaussian_mineig": 0.00679248689380384,
+    "h5_score": 0.04659709616047957,
+    "qmc_3se": 0.00026322051580907735,
+    "qmc_diff": 8.678497656852971e-05,
+    "ref_ok": 1.0,
+    "third_allowance": 0.007358250289783792,
+    "third_error": 0.007345429815337573,
+    "third_maxabs": 0.005049651026400648,
+    "third_mineig": 0.00679248689380384,
+    "u": 1.2726827265802399e-05
+  },
+  "written": "2026-10-25T20:31:01+00:00"
+}

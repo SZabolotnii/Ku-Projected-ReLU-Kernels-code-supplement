@@ -1,0 +1,36 @@
+{
+  "cell": "d=16_geometry=dense_law=uniform_n=32_panel=5_part=accuracy__34e2d12b",
+  "params": {
+    "d": 16,
+    "geometry": "dense",
+    "law": "uniform",
+    "n": 32,
+    "panel": 5,
+    "part": "accuracy"
+  },
+  "seconds": 3.613,
+  "values": {
+    "candidate_allowance": 0.0015295390464909475,
+    "candidate_error": 0.0015169167216045787,
+    "candidate_maxabs": 0.0024902674031245797,
+    "candidate_mineig": 0.005871410588888573,
+    "fourth_allowance": 0.0015295390464909475,
+    "fourth_error": 0.0015169167216045787,
+    "fourth_maxabs": 0.0024902674031245797,
+    "fourth_mineig": 0.005871410588888573,
+    "gaussian_allowance": 0.00740322348854681,
+    "gaussian_error": 0.0073905271373332915,
+    "gaussian_maxabs": 0.007303214626139615,
+    "gaussian_mineig": 0.00601025342677805,
+    "h5_score": 0.047017964592932913,
+    "qmc_3se": 0.0002520978578845325,
+    "qmc_diff": 7.871193370487051e-05,
+    "ref_ok": 1.0,
+    "third_allowance": 0.00740322348854681,
+    "third_error": 0.0073905271373332915,
+    "third_maxabs": 0.007303214626139615,
+    "third_mineig": 0.00601025342677805,
+    "u": 1.260304803229849e-05
+  },
+  "written": "2026-10-25T20:31:20+00:00"
+}

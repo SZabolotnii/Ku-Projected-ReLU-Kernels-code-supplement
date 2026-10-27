@@ -1,0 +1,337 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.5cm]{geometry}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\He}{\mathrm{He}}
+
+\title{Projected-cumulant ReLU kernel: statements for audit}
+\author{Ku-Projected-ReLU-Kernels, pipeline stage 5 (2026-10-25)}
+\date{}
+
+\begin{document}
+\maketitle
+
+Working note, not a manuscript. It states hypotheses H1 and H2 of
+\texttt{BRIEF.md} as propositions with proofs. Throughout, $\varphi$ and $\Phi$
+are the standard normal density and distribution function, $\varphi(0)=(2\pi)^{-1/2}$,
+$\He_k$ is the probabilists' Hermite polynomial ($\He_k\varphi=(-\tfrac{d}{dz})^k\varphi$),
+and $u_+=\max(u,0)$. For a multi-index $\alpha=(\alpha_1,\alpha_2)$ write
+$\He_\alpha(z)=\He_{\alpha_1}(z_1)\He_{\alpha_2}(z_2)$, $\alpha!=\alpha_1!\alpha_2!$,
+$|\alpha|=\alpha_1+\alpha_2$.
+
+\begin{definition}[Setting]\label{def:setting}
+Let $W=(W_1,\dots,W_d)$ have independent components, each distributed as a fixed law
+with $\E W_1=0$, $\E W_1^2=1$ and finite fourth moment; write $\kappa_r=\kappa_r(W_1)$ for
+its cumulants. For $x,y\in\R^d\setminus\{0\}$ the kernel is
+$K(x,y)=\E[(W^\top x)_+(W^\top y)_+]$. For unit $x,y$ put $\rho=x^\top y$; when
+$|\rho|<1$ put $s=\sqrt{1-\rho^2}$, $a=x$, $b=(y-\rho x)/s$, $Z_1=W^\top a$,
+$Z_2=W^\top b$, and
+\[
+g_\rho(z_1,z_2)=(z_1)_+(\rho z_1+s z_2)_+ ,\qquad
+T_{pq}(\rho)=\E\big[g_\rho(G_1,G_2)\He_p(G_1)\He_q(G_2)\big],
+\]
+where $(G_1,G_2)$ are independent standard normal. Put
+$\kappa_{pq}=\kappa_{p+q}\sum_{j=1}^d a_j^p b_j^q$ for $p+q\ge 2$. The candidate is
+\[
+\widehat K(x,y)=T_{00}
++\sum_{p+q=3}\frac{\kappa_{pq}T_{pq}}{p!\,q!}
++\sum_{p+q=4}\frac{\kappa_{pq}T_{pq}}{p!\,q!}
++\frac12\sum_{p+q=3}\sum_{r+t=3}\frac{\kappa_{pq}\kappa_{rt}T_{p+r,q+t}}{p!\,q!\,r!\,t!},
+\]
+and for non-zero $x,y$ that are not unit,
+$\widehat K(x,y)=\|x\|\,\|y\|\,\widehat K(x/\|x\|,y/\|y\|)$.
+At $\rho=\pm1$ the candidate is defined by the limits in
+Proposition~\ref{prop:limits}.
+\end{definition}
+
+\begin{lemma}[Projected cumulants]\label{lem:cumulants}
+Under Definition~\ref{def:setting} with $|\rho|<1$ (so $s=\sqrt{1-\rho^2}>0$), the joint
+cumulant of $(Z_1,Z_2)$ of order $(p,q)$ equals $\kappa_{pq}$ for every $p+q\ge2$ with
+$\E|W_1|^{p+q}<\infty$, in particular for $2\le p+q\le4$. Hence
+$\mathrm{Cov}(Z_1,Z_2)=I_2$; and if $\kappa_3\neq0$ and $d\ge2$, there are unit $x,y$ for
+which $Z_1$ and $Z_2$ are not independent.
+\end{lemma}
+
+\begin{proof}
+$Z_1=\sum_j a_jW_j$ and $Z_2=\sum_j b_jW_j$. Joint cumulants are multilinear and the
+mixed cumulants of independent variables vanish, so
+$\mathrm{cum}(Z_1^{(p)},Z_2^{(q)})=\sum_j a_j^pb_j^q\,\kappa_{p+q}(W_j)$.
+For $p+q=2$ this gives $\sum_ja_j^2=1$, $\sum_ja_jb_j=(\rho-\rho)/s=0$ and
+$\sum_j b_j^2=(1-2\rho^2+\rho^2)/s^2=1$. Dependence: for any $d\ge2$ take
+$a=(1,1,0,\dots,0)/\sqrt2$, $b=(1,-1,0,\dots,0)/\sqrt2$ (i.e.\ $x=a$, $y=b$, $\rho=0$),
+$\mathrm{cum}(Z_1,Z_2,Z_2)=\kappa_3\sum_ja_jb_j^2=\kappa_3/\sqrt2\neq0$ when
+$\kappa_3\neq0$, which is impossible for independent $Z_1,Z_2$.
+\end{proof}
+
+\begin{lemma}[Inner integral]\label{lem:inner}
+Let $|\rho|<1$, $s=\sqrt{1-\rho^2}>0$, $u\in\R$, $\alpha(u)=-\rho u/s$, $T_{pq}$ as in
+Definition~\ref{def:setting}, and
+$B_q(u)=\int_\R(\rho u+sz)_+\He_q(z)\varphi(z)\,dz$. Then
+$B_0(u)=\rho u\,\Phi(-\alpha)+s\varphi(\alpha)$, $B_1(u)=s\,\Phi(-\alpha)$ and
+$B_q(u)=s\,\varphi(\alpha)\He_{q-2}(\alpha)$ for $q\ge2$, with $\alpha=\alpha(u)$.
+Consequently $T_{pq}(\rho)=\int_0^\infty u\He_p(u)\varphi(u)B_q(u)\,du$.
+\end{lemma}
+
+\begin{proof}
+The integrand is supported on $z>\alpha$, where $(\rho u+sz)_+=\rho u+sz=:h(z)$, with
+$h(\alpha)=0$ and $h'=s$. For $q=0$: $\int_\alpha^\infty(\rho u+sz)\varphi=\rho u\Phi(-\alpha)+s\varphi(\alpha)$.
+For $q=1$: $\int_\alpha^\infty(\rho u+sz)z\varphi=\rho u\varphi(\alpha)+s(\alpha\varphi(\alpha)+\Phi(-\alpha))
+=s\Phi(-\alpha)$, since $s\alpha=-\rho u$. For $q\ge2$, using
+$\frac{d}{dz}(\He_{k-1}\varphi)=-\He_k\varphi$ ($k\ge1$) and integrating by parts twice,
+\[
+\int_\alpha^\infty h\He_q\varphi=\big[-h\He_{q-1}\varphi\big]_\alpha^\infty+s\int_\alpha^\infty\He_{q-1}\varphi
+=0+s\big[-\He_{q-2}\varphi\big]_\alpha^\infty=s\He_{q-2}(\alpha)\varphi(\alpha).
+\]
+The last claim is Fubini over $z_1=u>0$ (where $(z_1)_+=u$), the integrand being
+dominated by a polynomial times $\varphi(u)\varphi(z)$.
+\end{proof}
+
+\begin{lemma}[Half-line moments]\label{lem:moments}
+Let $|\rho|<1$, $s=\sqrt{1-\rho^2}>0$, $c=\rho/s$, $J_k=\int_0^\infty u^k\varphi(u)\varphi(cu)\,du$ and
+$I_k=\int_0^\infty u^k\varphi(u)\Phi(cu)\,du$ for integers $k\ge0$. Then
+$J_k=\Gamma(\tfrac{k+1}{2})(2s^2)^{(k+1)/2}/(4\pi)$,
+$I_0=\tfrac14+\arcsin(\rho)/(2\pi)$, $I_1=\varphi(0)/2+cJ_0$ and
+$I_k=(k-1)I_{k-2}+cJ_{k-1}$ for $k\ge2$.
+\end{lemma}
+
+\begin{proof}
+$\varphi(u)\varphi(cu)=(2\pi)^{-1}e^{-u^2/(2s^2)}$ because $1+c^2=s^{-2}$, and
+$\int_0^\infty u^ke^{-u^2/(2s^2)}du=\tfrac12\Gamma(\tfrac{k+1}2)(2s^2)^{(k+1)/2}$, which is
+the closed form of $J_k$.
+$I_0=P(G_1>0,\,G_2<cG_1)$ is the probability of a planar wedge of angle
+$\pi/2+\arctan c$ under the rotation-invariant law $N(0,I_2)$, so
+$I_0=\tfrac14+\arctan(c)/(2\pi)$, and $\arctan(\rho/s)=\arcsin\rho$.
+For $k\ge1$ write $u^k\varphi(u)=-u^{k-1}\varphi'(u)$ and integrate by parts:
+$I_k=\big[-u^{k-1}\varphi(u)\Phi(cu)\big]_0^\infty+\int_0^\infty\big((k-1)u^{k-2}\Phi(cu)+cu^{k-1}\varphi(cu)\big)\varphi(u)du$.
+The boundary term is $\varphi(0)\Phi(0)=\varphi(0)/2$ for $k=1$ and $0$ for $k\ge2$, and
+the two integrals are $(k-1)I_{k-2}$ and $cJ_{k-1}$. For $k=1$ the first vanishes, which
+gives $I_1=\varphi(0)/2+cJ_0$; for $k\ge2$ it gives the recurrence. Starting from $I_0$
+and $I_1$, the recurrence and the closed form of $J_k$ yield every $I_k$.
+\end{proof}
+
+\begin{theorem}[Closed form of the contractions]\label{thm:closed}
+For $|\rho|<1$, $s=\sqrt{1-\rho^2}>0$ and all $p,q\ge0$, $T_{pq}(\rho)$ is a finite
+linear combination of $I_0,\dots,I_{p+2}$ and $J_0,\dots,J_{\max(p+q-1,\,p+1)}$ of
+Lemma~\ref{lem:moments}, with coefficients polynomial in $\rho$, $s$ and $c=\rho/s$, namely
+\[
+T_{p0}=\int_0^\infty u\He_p(u)\varphi(u)\big[\rho u\Phi(cu)+s\varphi(cu)\big]du,\quad
+T_{p1}=s\int_0^\infty u\He_p(u)\varphi(u)\Phi(cu)du,
+\]
+\[
+T_{pq}=s\int_0^\infty u\He_p(u)\He_{q-2}(-cu)\varphi(u)\varphi(cu)\,du\quad(q\ge2),
+\]
+each expanded in monomials $u^k$. In particular
+$T_{00}(\rho)=\big(s+(\pi-\arccos\rho)\rho\big)/(2\pi)$, the arc-cosine kernel.
+\end{theorem}
+
+\begin{proof}
+Insert Lemma~\ref{lem:inner} with $\alpha(u)=-cu$, so $\Phi(-\alpha)=\Phi(cu)$,
+$\varphi(\alpha)=\varphi(cu)$, $\He_{q-2}(\alpha)=\He_{q-2}(-cu)$; this gives the three
+integrals displayed in the statement, one for each of the cases $q=0$, $q=1$ and $q\ge2$,
+which together cover every $(p,q)$. Write $\He_m(u)=\sum_{k=0}^m h_{m,k}u^k$ with integer
+$h_{m,k}$. Expanding in powers of $u$ and using the definitions of $I_k$ and $J_k$,
+\[
+T_{p0}=\rho\sum_{k=0}^p h_{p,k}I_{k+2}+s\sum_{k=0}^p h_{p,k}J_{k+1},\qquad
+T_{p1}=s\sum_{k=0}^p h_{p,k}I_{k+1},
+\]
+\[
+T_{pq}=s\sum_{k=0}^p\sum_{l=0}^{q-2}h_{p,k}\,h_{q-2,l}\,(-c)^l\,J_{k+l+1}\quad(q\ge2).
+\]
+The indices satisfy $k+2\le p+2$, $k+1\le p+1$ and $k+l+1\le p+q-1$, and the coefficients
+are polynomial in $\rho$, $s$ and $c$. For $p=q=0$:
+$T_{00}=\rho I_2+sJ_1=\rho(I_0+cJ_1)+sJ_1$ with $J_1=s^2/(2\pi)$, so
+$T_{00}=\rho/4+\rho\arcsin(\rho)/(2\pi)+(\rho^2s+s^3)/(2\pi)
+=\rho/4+\rho\arcsin(\rho)/(2\pi)+s/(2\pi)$, and $\pi-\arccos\rho=\pi/2+\arcsin\rho$.
+\end{proof}
+
+\begin{proposition}[Edgeworth origin and the $\kappa_3^2$ contraction]\label{prop:edgeworth}
+Under Definition~\ref{def:setting} with $|\rho|<1$, let
+$\kappa_\alpha=\kappa_{\alpha_1\alpha_2}$ and
+\[
+q_2(z)=1+\sum_{|\alpha|=3}\frac{\kappa_\alpha}{\alpha!}\He_\alpha(z)
++\sum_{|\alpha|=4}\frac{\kappa_\alpha}{\alpha!}\He_\alpha(z)
++\frac12\sum_{|\alpha|=3}\sum_{|\beta|=3}\frac{\kappa_\alpha\kappa_\beta}{\alpha!\beta!}\He_{\alpha+\beta}(z),
+\]
+the polynomial of the second-order formal Edgeworth expansion of the law of $(Z_1,Z_2)$
+around $N(0,I_2)$, i.e.\ $q_2\varphi_2$ collects the terms of order $\le2$ in
+$\exp\!\big(\sum_{|\alpha|\ge3}\kappa_\alpha(-\partial)^\alpha/\alpha!\big)\varphi_2$ when
+$\kappa_\alpha$ of order $|\alpha|$ is counted as order $|\alpha|-2$. Then
+$\widehat K(x,y)=\int_{\R^2}g_\rho(z)\,q_2(z)\varphi_2(z)\,dz$. The $\kappa_3^2$ term
+carries $\He_{\alpha+\beta}$, not $\He_\alpha\He_\beta$, and its derivation uses no
+smoothness of $g_\rho$; in dimension one it reduces to $\kappa_3^2\He_6/72$.
+\end{proposition}
+
+\begin{proof}
+Since $(-\partial)^\alpha\varphi_2=\He_\alpha\varphi_2$ for the standard bivariate density,
+$(-\partial)^\alpha(-\partial)^\beta\varphi_2=(-\partial)^{\alpha+\beta}\varphi_2=\He_{\alpha+\beta}\varphi_2$.
+Write $\mathcal D_r=\sum_{|\alpha|=r+2}\kappa_\alpha(-\partial)^\alpha/\alpha!$, the part of
+order $r$ in the exponent. The operators commute, so
+$\exp(\mathcal D_1+\mathcal D_2+\dots)=1+\mathcal D_1+\big(\mathcal D_2+\tfrac12\mathcal D_1^2\big)+(\text{order}\ge3)$
+with
+$\mathcal D_1^2=\sum_{|\alpha|=3}\sum_{|\beta|=3}\kappa_\alpha\kappa_\beta(-\partial)^{\alpha+\beta}/(\alpha!\beta!)$.
+Applying the terms of order $\le2$ to $\varphi_2$ gives $q_2\varphi_2$ term by term. The
+operators act on $\varphi_2$, so pairing with $g_\rho$ is the ordinary integral of
+$g_\rho q_2\varphi_2$; no derivative of $g_\rho$ appears. Integrating term by term gives
+$\E[g_\rho(G)\He_\alpha(G)]=T_{\alpha_1\alpha_2}$ and hence $\widehat K$. In one
+dimension $\tfrac12(\kappa_3/3!)^2\He_6=\kappa_3^2\He_6/72$.
+\end{proof}
+
+\begin{proposition}[Symmetry and homogeneity]\label{prop:symhom}
+For all non-zero $x,y\in\R^d$ with $|x^\top y|<\|x\|\|y\|$:
+$\widehat K(x,y)=\widehat K(y,x)$, and
+$\widehat K(\lambda x,\mu y)=\lambda\mu\,\widehat K(x,y)$ for $\lambda,\mu>0$.
+\end{proposition}
+
+\begin{proof}
+Homogeneity holds by the normalisation in Definition~\ref{def:setting}, since
+$\lambda x/\|\lambda x\|=x/\|x\|$. For symmetry take $x,y$ unit. Let $U=W^\top x$,
+$V=W^\top y$, so $(U,V)^\top=A(Z_1,Z_2)^\top$ with $A=\begin{pmatrix}1&0\\ \rho&s\end{pmatrix}$
+and $g_\rho(z)=f(Az)$ for $f(u,v)=u_+v_+$. Cumulant tensors of order $r$ transform as
+$\kappa^{UV}=A^{\otimes r}\kappa^{Z}$, and under $u=Az$ the operator
+$\sum_{|\alpha|=r}\kappa^Z_\alpha\partial_z^\alpha/\alpha!$ equals
+$\sum_{|\gamma|=r}\kappa^{UV}_\gamma\partial_{(u,v)}^\gamma/\gamma!$ (both are the
+contraction of the symmetric cumulant tensor with the $r$-th derivative tensor). Hence the
+order-$\le2$ truncation of the formal Edgeworth expansion is coordinate-free: by
+Proposition~\ref{prop:edgeworth}, $\widehat K=\int f\,(1+\mathcal D_1+\mathcal D_2+\tfrac12\mathcal D_1^2)^{*}\varphi_\Sigma$,
+where $\varphi_\Sigma$ is the $N(0,\Sigma)$ density, $\Sigma=\begin{pmatrix}1&\rho\\ \rho&1\end{pmatrix}$,
+and $\mathcal D_r$ uses the cumulants $\kappa^{UV}_{(i,j)}=\kappa_{i+j}\sum_kx_k^iy_k^j$.
+Swapping $x$ and $y$ swaps $(i,j)\mapsto(j,i)$ in these cumulants and the coordinates of
+$\Sigma$ and $f$; $\Sigma$ and $f$ are invariant under the swap, so the integral is
+unchanged.
+\end{proof}
+
+\begin{proposition}[Limits at $\rho=\pm1$]\label{prop:limits}
+Let $x$ be a unit vector and $y_n$ unit vectors with $\rho_n=x^\top y_n\to\pm1$,
+$|\rho_n|<1$. Then $\widehat K(x,y_n)\to0$ if $\rho_n\to-1$, and
+$\widehat K(x,y_n)\to\tfrac12+\kappa_3\big(\sum_jx_j^3\big)\varphi(0)/3$ if
+$\rho_n\to1$, whatever the directions $b_n=(y_n-\rho_nx)/s_n$.
+\end{proposition}
+
+\begin{proof}
+By Proposition~\ref{prop:edgeworth}, with $\kappa_{pq}=\kappa_{p+q}\sum_ja_j^pb_j^q$ as in
+Definition~\ref{def:setting}, $\widehat K$ is the finite sum
+$\widehat K=T_{00}+\sum_{p+q\in\{3,4,6\}}c_{pq}T_{pq}(\rho)$, where $c_{pq}=\kappa_{pq}/(p!\,q!)$
+for $p+q\in\{3,4\}$ and the $c_{pq}$ with $p+q=6$ are quadratic in the $\kappa_{p'q'}$,
+$p'+q'=3$; no other total degree occurs. In particular $c_{30}=\kappa_3\sum_jx_j^3/6$.
+For $p+q\ge3$ one of $p,q$ is at least $2$, and $|a_j|,|b_j|\le1$ with
+$\sum a_j^2=\sum b_j^2=1$, so $|\kappa_{pq}|\le|\kappa_{p+q}|$, and hence every $|c_{pq}|$
+is bounded uniformly in $n$.
+Next $g_{\rho_n}\to g_{\pm1}$ pointwise with $|g_{\rho}(z)|\le|z|^2$, so by dominated
+convergence $T_{pq}(\rho_n)\to\E[g_{\pm1}(G)\He_p(G_1)\He_q(G_2)]$. For $\rho=-1$,
+$g_{-1}=(z_1)_+(-z_1)_+=0$, so every limit is $0$. For $\rho=1$, $g_1=(z_1)_+^2$ does not
+depend on $z_2$, so the limit is $0$ whenever $q\ge1$, and equals
+$t_p=\E[(G_1)_+^2\He_p(G_1)]$ for $q=0$. With $\E[(G_1)_+^{2m+1}]=2^mm!\,\varphi(0)$:
+$t_0=\tfrac12$, $t_3=\E(G_1)_+^5-3\E(G_1)_+^3=8\varphi(0)-6\varphi(0)=2\varphi(0)$;
+$t_4=t_6=0$ because $(z)_+^2\He_{2k}(z)$ has the same integral as
+$\tfrac12z^2\He_{2k}(z)$ and $z^2=\He_2+1$ is orthogonal to $\He_4,\He_6$. Since the coefficients are bounded and the
+sum is finite, only $T_{00}$ and the $(3,0)$ term survive, giving
+$\tfrac12+c_{30}t_3=\tfrac12+\kappa_3(\sum_jx_j^3)\varphi(0)/3$.
+\end{proof}
+
+\begin{assumption}[Triangular-array form of a cited expansion theorem]\label{ass:br}
+Bhattacharya and Rao (1976, \emph{Normal Approximation and Asymptotic Expansions},
+Thm.~20.6; p.~216 of the 2010 SIAM edition) prove an Edgeworth expansion for a
+\emph{sequence} of independent mean-zero random vectors in $\R^k$ with positive-definite
+covariance matrices and finite $s$-th absolute moments, $s\ge3$; its proof is that of
+their Thm.~20.1. This paper needs a form that differs in three ways, and assumes it
+rather than citing it: the summands form a triangular array; a single summand may have a
+singular covariance, only the average being normalised; and one remainder sequence
+serves a whole class of arrays (the uniformity clause below). Hypotheses (i)--(ii) and
+the form of the bound follow the pattern of that theorem; only its opening sentence was
+checked against the book. Let $X_{1},\dots,X_{n}$ be independent
+mean-zero random vectors in $\R^k$ (a triangular array in $n$) with average covariance
+$n^{-1}\sum_j\mathrm{Cov}(X_j)=I_k$, let $s\ge3$ be an integer, and assume
+(i) $\sup_n n^{-1}\sum_j\E\|X_j\|^{s}<\infty$ and
+$n^{-1}\sum_j\E\|X_j\|^s\mathbf 1\{\|X_j\|>\varepsilon\sqrt n\}\to0$ for every
+$\varepsilon>0$; (ii) for every $\beta>0$,
+$\limsup_n\sup_{\|t\|\ge\beta}n^{-1}\sum_j|\E e^{i\langle t,X_j\rangle}|<1$.
+Let $Q_n$ be the law of $n^{-1/2}\sum_jX_j$ and $P_r$ the signed measures of its formal
+Edgeworth expansion (built from the cumulants of $Q_n$, $r$-th term of order $n^{-r/2}$).
+Then for every Borel $f$ with $|f(z)|\le M(1+\|z\|^{s'})$, $s'\le s$,
+\[
+\Big|\int f\,d\Big(Q_n-\sum_{r=0}^{s-2}P_r\Big)\Big|
+\le\delta_n n^{-(s-2)/2}+C\,\bar\omega_f\big(2e^{-\eta n}\big),
+\]
+where $C,\eta$ and the sequence $\delta_n\to0$ depend only on $k,s,M$ and the bounds in
+(i)--(ii): one sequence $\delta_n$ serves every array and every $f$ that share the bound
+in (i) on the moment average, a common majorant $\tau_n(\varepsilon)\to0$ of the
+truncated averages, and the bound in (ii). (This uniformity is part of the assumption.)
+Here
+$\bar\omega_f(\epsilon)=\int\sup_{\|h\|\le\epsilon}|f(z+h)-f(z)|\,\varphi_k(z)dz$.
+\end{assumption}
+
+\begin{lemma}[Dense inputs give the averaged Cramér condition]\label{lem:cramer}
+Let $W_1,\dots,W_d$ be identically distributed with $\E W_1=0$, $\E W_1^2=1$, and let
+$W_1$ satisfy Cramér's condition $\limsup_{|\tau|\to\infty}|\E e^{i\tau W_1}|<1$.
+Let $a,b\in\R^d$ be orthonormal with $\max_j(|a_j|,|b_j|)\le c\,d^{-1/2}$, and
+$X_j=\sqrt d\,(a_j,b_j)W_j\in\R^2$. Then $d^{-1}\sum_j\mathrm{Cov}(X_j)=I_2$ and, for
+every $\beta>0$,
+\[
+\sup_{\|t\|\ge\beta}\frac1d\sum_{j=1}^d\big|\E e^{i\langle t,X_j\rangle}\big|
+\le1-\frac{1-\eta_W(\beta/\sqrt2)}{4c^2}<1,
+\qquad \eta_W(\gamma)=\sup_{|\tau|\ge\gamma}|\E e^{i\tau W_1}|,
+\]
+with a bound that depends only on $c$, $\beta$ and the law of $W_1$.
+\end{lemma}
+
+\begin{proof}
+$\mathrm{Cov}(X_j)=d\,(a_j,b_j)^\top(a_j,b_j)$, which averages to $\sum_j(a_j,b_j)^\top(a_j,b_j)=I_2$.
+A law satisfying Cramér's condition is non-lattice, so $|\E e^{i\tau W_1}|<1$ for
+$\tau\neq0$; by continuity and the $\limsup$ condition $\eta_W(\gamma)<1$ for every
+$\gamma>0$. Fix $t$ with $\|t\|\ge\beta$, $e=t/\|t\|$, and
+$m_j=\langle e,(a_j,b_j)\rangle^2$. Then $\sum_jm_j=e^\top I_2e=1$ and
+$m_j\le a_j^2+b_j^2\le2c^2/d$. With $\mathcal J=\{j:m_j\ge1/(2d)\}$,
+$1\le|\mathcal J|\,2c^2/d+(d-|\mathcal J|)/(2d)$, so $|\mathcal J|\ge d/(4c^2)$. For
+$j\in\mathcal J$, $|\sqrt d\langle t,(a_j,b_j)\rangle|=\|t\|\sqrt{dm_j}\ge\beta/\sqrt2$, hence
+$|\E e^{i\langle t,X_j\rangle}|\le\eta_W(\beta/\sqrt2)$; the other terms are at most $1$.
+Averaging gives the bound.
+\end{proof}
+
+\begin{theorem}[Remainder rate for dense inputs, conditional on Assumption~\ref{ass:br}]\label{thm:remainder}
+Assume the expansion theorem stated as Assumption~\ref{ass:br} holds as written. Let
+$W_1$ satisfy Definition~\ref{def:setting}, $\E|W_1|^5<\infty$ and Cramér's
+condition. Fix $c\ge1$. Then there is $C$, depending only on $c$ and the law of $W_1$,
+such that for every $d$ and every pair of unit vectors $x,y\in\R^d$ with $|\rho|<1$ whose
+$a=x$, $b=(y-\rho x)/s$ satisfy $\max_j(|a_j|,|b_j|)\le c\,d^{-1/2}$,
+\[
+|K(x,y)-\widehat K(x,y)|\le C\,d^{-3/2}.
+\]
+\end{theorem}
+
+\begin{proof}
+Apply Assumption~\ref{ass:br} with $k=2$, $n=d$, $s=5$, $X_j=\sqrt d(a_j,b_j)W_j$, so that
+$d^{-1/2}\sum_jX_j=(Z_1,Z_2)$ and $K(x,y)=\int g_\rho\,dQ_d$.
+(i): $\|X_j\|\le\sqrt2c|W_j|$, so $d^{-1}\sum_j\E\|X_j\|^5\le(\sqrt2c)^5\E|W_1|^5$ and
+the truncated average is at most
+$\tau_d(\varepsilon)=(\sqrt2c)^5\E|W_1|^5\mathbf 1\{\sqrt2c|W_1|>\varepsilon\sqrt d\}\to0$, a
+majorant common to all admissible $(a,b)$. (ii) is Lemma~\ref{lem:cramer}, whose bound
+depends only on $c$, $\beta$ and the law of $W_1$. The function
+$f=g_\rho$ satisfies $|g_\rho(z)|\le\|z\|^2$ ($M=1$, $s'=2$), and
+$|g_\rho(z+h)-g_\rho(z)|\le2\|h\|(\|z\|+\|h\|)$, so
+$\bar\omega_{g_\rho}(2e^{-\eta d})=O(e^{-\eta d})$, uniformly in $\rho$. By
+Lemma~\ref{lem:cumulants} the order-$r$ cumulants of $(Z_1,Z_2)$ are $\kappa_{pq}$,
+$p+q=r$, and by Proposition~\ref{prop:edgeworth} $\int g_\rho\,d(P_0+P_1+P_2)=\widehat K(x,y)$.
+Hence
+$|K-\widehat K|\le|\int g_\rho\,dP_3|+\delta_dd^{-3/2}+O(e^{-\eta d})$. The measure $P_3$
+is $\varphi_2$ times a polynomial whose coefficients are sums of products of
+$\kappa_{pq}$ with total weight $\sum(p+q-2)=3$; under the density assumption
+$|\kappa_{pq}|\le|\kappa_{p+q}|\,d\,(c\,d^{-1/2})^{p+q}=|\kappa_{p+q}|c^{p+q}d^{-(p+q-2)/2}$,
+so every coefficient of $P_3$ is $O(d^{-3/2})$, and $\int|g_\rho|\,|P_3|\le C'd^{-3/2}$
+with $C'$ depending on $c$ and $\kappa_3,\kappa_4,\kappa_5$. All the bounds fed into
+Assumption~\ref{ass:br} (the moment average, the majorant $\tau_d$, the bound of
+Lemma~\ref{lem:cramer}, and $M=1$, $s'=2$ for every $g_\rho$) depend only on $c$ and the
+law of $W_1$, so by the uniformity clause of Assumption~\ref{ass:br} a single sequence
+$\delta_d\to0$ serves all admissible $(a,b)$ and all $\rho$. Hence $\sup_d\delta_d<\infty$
+and the bound holds for every $d$ with a suitable $C$.
+\end{proof}
+
+\end{document}

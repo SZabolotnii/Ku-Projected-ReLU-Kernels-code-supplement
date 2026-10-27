@@ -1,0 +1,162 @@
+{
+  "gamma1_d4": [
+    {
+      "three_se": 4.986329953669373e-05,
+      "difference": 7.017999971100702e-05,
+      "combined": 0.00018955531817898598,
+      "convergence": true
+    },
+    {
+      "three_se": 4.330916278354823e-05,
+      "difference": 0.00011080507096191578,
+      "combined": 0.00014105293530280606,
+      "convergence": true
+    },
+    {
+      "three_se": 4.22261449522251e-05,
+      "difference": 7.722384192235502e-05,
+      "combined": 0.00019442848849032563,
+      "convergence": true
+    }
+  ],
+  "gamma1_d16": [
+    {
+      "three_se": 0.00018081353623843348,
+      "difference": 0.00016437082123306557,
+      "combined": 0.00044187462926672453,
+      "convergence": true
+    },
+    {
+      "three_se": 1.4317376102950189e-05,
+      "difference": 8.300925020975769e-06,
+      "combined": 6.671027894752398e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00013185176735534102,
+      "difference": 6.667684946518902e-05,
+      "combined": 0.0002752188345498175,
+      "convergence": true
+    }
+  ],
+  "gamma1_d32": [
+    {
+      "three_se": 0.00036724080785195126,
+      "difference": 0.0002784185161231858,
+      "combined": 0.0008302485713455785,
+      "convergence": true
+    },
+    {
+      "three_se": 7.854528890052034e-06,
+      "difference": 5.646081787279537e-06,
+      "combined": 7.24382077714205e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.0002458057226874991,
+      "difference": 0.00016978331678779636,
+      "combined": 0.0006109498214730634,
+      "convergence": true
+    }
+  ],
+  "gamma1_d64": [
+    {
+      "three_se": 0.0004896155488424329,
+      "difference": 0.00036588531700780015,
+      "combined": 0.001128283677078859,
+      "convergence": true
+    },
+    {
+      "three_se": 1.0483913724890783e-05,
+      "difference": 2.2446274020001305e-05,
+      "combined": 6.0740515016169744e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.0003496378020878756,
+      "difference": 0.00023617861228689613,
+      "combined": 0.0009168647312980577,
+      "convergence": true
+    }
+  ],
+  "laplace_d4": [
+    {
+      "three_se": 3.9184017118403425e-05,
+      "difference": 1.969724095819155e-05,
+      "combined": 7.674494357318387e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 4.2142197268258346e-05,
+      "difference": 1.625191323529328e-05,
+      "combined": 6.673363321614927e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 3.610060486460806e-05,
+      "difference": 1.3699207898206253e-05,
+      "combined": 7.817843736724798e-05,
+      "convergence": true
+    }
+  ],
+  "laplace_d16": [
+    {
+      "three_se": 0.00017113727692540792,
+      "difference": 0.00013691462318083617,
+      "combined": 0.0005109135283392486,
+      "convergence": true
+    },
+    {
+      "three_se": 1.202892112749563e-05,
+      "difference": 2.3003465740908926e-05,
+      "combined": 5.917522645782127e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00013373572494097152,
+      "difference": 9.691793733475888e-05,
+      "combined": 0.0003820896356394544,
+      "convergence": true
+    }
+  ],
+  "laplace_d32": [
+    {
+      "three_se": 0.00038570789696548805,
+      "difference": 0.0003025639921803807,
+      "combined": 0.0007863624760717946,
+      "convergence": true
+    },
+    {
+      "three_se": 1.0786972067267259e-05,
+      "difference": 2.146796513611717e-05,
+      "combined": 6.654211257307536e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.0002615371579182688,
+      "difference": 0.00019136545814719505,
+      "combined": 0.0005879061191748019,
+      "convergence": true
+    }
+  ],
+  "laplace_d64": [
+    {
+      "three_se": 0.00042190703263777964,
+      "difference": 0.00035511232112689535,
+      "combined": 0.0010619734537110177,
+      "convergence": true
+    },
+    {
+      "three_se": 1.2441451020468809e-05,
+      "difference": 1.6919824222344264e-05,
+      "combined": 4.929030339367331e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00031229581519201033,
+      "difference": 0.00017533456510166763,
+      "combined": 0.0008289484054172311,
+      "convergence": true
+    }
+  ]
+}

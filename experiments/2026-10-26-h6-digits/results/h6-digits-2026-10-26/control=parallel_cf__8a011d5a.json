@@ -1,0 +1,11 @@
+{
+  "cell": "control=parallel_cf__8a011d5a",
+  "params": {
+    "control": "parallel_cf"
+  },
+  "seconds": 1.32,
+  "values": {
+    "parallel_vs_kg": 1.184164295453041e-16
+  },
+  "written": "2026-10-26T05:41:51+00:00"
+}

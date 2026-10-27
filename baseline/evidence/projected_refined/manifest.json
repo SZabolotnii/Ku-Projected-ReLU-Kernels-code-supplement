@@ -1,0 +1,17 @@
+{
+  "evidence/projected_refined/reference_laplace_d4.npz": "85734ba5c381469e77527253e85f2accb122cd86fb715f2dedbea60d3900bac3",
+  "evidence/projected_refined/reference_gamma1_d16.npz": "5765e424b60a7845a3768675611ec3aa9e8af8d81ca13028ba6edf1e54258e5b",
+  "evidence/projected_refined/reference_laplace_d32.npz": "a152cfe2744e5beecd9a876c2b082744a4909beac8f617bebded73bf9fef7fd0",
+  "evidence/projected_refined/endpoint_guards.json": "4e63e1a6d3a521e2e476e7c6855ab1c27c6ed6f47e3a288c093ddc5b20065650",
+  "evidence/projected_refined/reference_gamma1_d4.npz": "e3997567a54a9996acecf9d0ea48c8b567dc7952f4b096438a49598ba1a20ed4",
+  "evidence/projected_refined/direct_parity.json": "9976d05a9f9b124f494811cb3cd735b76ef0835b1c9f363cf877e75f132d058f",
+  "evidence/projected_refined/reference_diagnostics.json": "3097b5e9dea47d98d8fd6975eb34ada864e6ee8d322d9507cd1c5444e68980b7",
+  "evidence/projected_refined/reference_gamma1_d64.npz": "eb430f822f86f918f4b513d0b221f9cad97963584cbb4a9c677e8cc79cb1d7ed",
+  "evidence/projected_refined/reference_laplace_d64.npz": "1a35bbe5bd13a66f21b82fcf5ee615ab9de540ee17a1224fb5b0d5ee3d62702a",
+  "evidence/projected_refined/reference_laplace_d16.npz": "c0b02752e14ad62c106d9ae2001b33db36900f736bc362e26fe57910be4e7a7c",
+  "evidence/projected_refined/reference_gamma1_d32.npz": "cb50982372a5404205d34491b0dbb3d1e7ecb710407c71d3cadf000253ac83d2",
+  "scripts/projected_refine.py": "bbf02882a8a28dcfeb8ffc75743122fa836777a0f980e71e45942dc530015961",
+  "PROJECTED_REFERENCE_REFINEMENT_SPEC.md": "4b57cd0c5cf8e596774eec4225d6ba109f5eef03d80dceda6836a293fd018c24",
+  "scripts/projected_core.py": "e58a67445203db7b8a45de61437b4dff357813f8ec688802439cb57da3af4517",
+  "scripts/projected_study.py": "dd4160a20b57203e01e80fda0f25099c1c87cbdab367d26217da9a26a2a85404"
+}

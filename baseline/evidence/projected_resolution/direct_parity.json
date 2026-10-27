@@ -1,0 +1,82 @@
+{
+  "gamma1_d32": [
+    {
+      "three_se": 0.00012961951513632979,
+      "difference": 0.00020805606776479792,
+      "combined": 0.0007558073598326428,
+      "convergence": true
+    },
+    {
+      "three_se": 2.2607581613663534e-06,
+      "difference": 4.459956534985721e-06,
+      "combined": 7.204655450904111e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 9.901947223213456e-05,
+      "difference": 0.0001493081317466825,
+      "combined": 0.0005680052687821934,
+      "convergence": true
+    }
+  ],
+  "gamma1_d64": [
+    {
+      "three_se": 0.00017379394172177385,
+      "difference": 0.0004339523801117739,
+      "combined": 0.0010312322491858395,
+      "convergence": true
+    },
+    {
+      "three_se": 2.363244270203657e-06,
+      "difference": 2.5003778563461027e-05,
+      "combined": 5.9875448004365436e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00012101275754096579,
+      "difference": 0.00026417156804520143,
+      "combined": 0.0008561586651617906,
+      "convergence": true
+    }
+  ],
+  "laplace_d32": [
+    {
+      "three_se": 0.00014337013172988146,
+      "difference": 0.0002666435191490744,
+      "combined": 0.0007000864302055841,
+      "convergence": true
+    },
+    {
+      "three_se": 2.7371699401125982e-06,
+      "difference": 2.330760652876753e-05,
+      "combined": 6.571904405451841e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00011615980281991067,
+      "difference": 0.0001963394997785587,
+      "combined": 0.0005391806067696915,
+      "convergence": true
+    }
+  ],
+  "laplace_d64": [
+    {
+      "three_se": 0.00016679490578819895,
+      "difference": 0.00033174488958039424,
+      "combined": 0.0009887452695766018,
+      "convergence": true
+    },
+    {
+      "three_se": 1.816319623190207e-06,
+      "difference": 1.7799510200110496e-05,
+      "combined": 4.772883720838547e-05,
+      "convergence": true
+    },
+    {
+      "three_se": 0.00012338704276417903,
+      "difference": 0.00019204912624615434,
+      "combined": 0.0007776945302053863,
+      "convergence": true
+    }
+  ]
+}

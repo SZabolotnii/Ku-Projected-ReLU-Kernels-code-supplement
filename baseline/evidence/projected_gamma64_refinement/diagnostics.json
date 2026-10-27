@@ -1,0 +1,26 @@
+{
+  "gamma1_d64_p0": {
+    "u": 0.0002474968405972508,
+    "difference": 0.00014211730786125597,
+    "combined": 0.0004570767590174969,
+    "valid": true,
+    "paired_direct_difference": 2.2918497209064787e-06,
+    "paired_direct_three_se": 8.085304278920114e-06
+  },
+  "gamma1_d64_p1": {
+    "u": 0.00025222429725192165,
+    "difference": 0.00015882857656342698,
+    "combined": 0.00045217363997084725,
+    "valid": true,
+    "paired_direct_difference": 2.4781651779004854e-06,
+    "paired_direct_three_se": 7.992372279401637e-06
+  },
+  "gamma1_d64_p2": {
+    "u": 0.00024465557452066415,
+    "difference": 0.00017960476686746757,
+    "combined": 0.0004222356118404098,
+    "valid": true,
+    "paired_direct_difference": 2.357044033083154e-06,
+    "paired_direct_three_se": 8.07087286069183e-06
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "cell": "control=gaussian__006947ef",
+  "params": {
+    "control": "gaussian"
+  },
+  "seconds": 2.82,
+  "values": {
+    "candidate_vs_arccos": 8.871638458585996e-17,
+    "cf_vs_arccos": 4.311184320018054e-06,
+    "u": 1.3424985410191248e-05
+  },
+  "written": "2026-10-26T13:26:35+00:00"
+}

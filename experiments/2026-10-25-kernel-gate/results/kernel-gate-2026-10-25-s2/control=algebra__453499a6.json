@@ -1,0 +1,12 @@
+{
+  "cell": "control=algebra__453499a6",
+  "params": {
+    "control": "algebra"
+  },
+  "seconds": 240.759,
+  "values": {
+    "closed_vs_quad": 4.3298697960381105e-15,
+    "frozen_vs_quad": 1.1324274851176597e-14
+  },
+  "written": "2026-10-26T13:26:33+00:00"
+}

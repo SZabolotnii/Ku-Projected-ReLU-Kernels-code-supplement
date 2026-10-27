@@ -1,0 +1,472 @@
+{
+ "note": "derived from the frozen run folders; regenerate, never edit",
+ "producer": "paper/scripts/make_tex.py",
+ "values": {
+  "macro.cpuWallMax": {
+   "field": "cpu_wall_max over gate cells, both sessions",
+   "printed": "1.03",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 1.0307890344104622
+  },
+  "macro.ctlCF": {
+   "field": "cf_vs_arccos",
+   "printed": "\\ensuremath{4.3\\times10^{-6}}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1/control=gaussian__006947ef.json",
+   "value": 4.311184320018054e-06
+  },
+  "macro.ctlClosed": {
+   "field": "closed_vs_quad",
+   "printed": "\\ensuremath{4.3\\times10^{-15}}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1/control=algebra__453499a6.json",
+   "value": 4.3298697960381105e-15
+  },
+  "macro.ctlFrozen": {
+   "field": "frozen_vs_quad",
+   "printed": "\\ensuremath{1.1\\times10^{-14}}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1/control=algebra__453499a6.json",
+   "value": 1.1324274851176597e-14
+  },
+  "macro.gSixteenHi": {
+   "field": "candidate_allowance, dense Gamma(1) d=16 n=32",
+   "printed": "0.014",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.014316949901880458
+  },
+  "macro.gSixteenLo": {
+   "field": "candidate_allowance, dense Gamma(1) d=16 n=32",
+   "printed": "0.012",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.011877057368341952
+  },
+  "macro.hFiveAuc": {
+   "field": "H5.auc",
+   "printed": "0.883",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 0.8833194096351991
+  },
+  "macro.hFiveOver": {
+   "field": "H5.predicted_accurate_over_0006",
+   "printed": "7",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 7
+  },
+  "macro.hFivePanels": {
+   "field": "H5.panels",
+   "printed": "120",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 120
+  },
+  "macro.hFivePrec": {
+   "field": "H5.confusion tp/(tp+fp)",
+   "printed": "0.81",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 0.8142857142857143
+  },
+  "macro.hFiveRec": {
+   "field": "H5.confusion tp/(tp+fn)",
+   "printed": "1.00",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 1.0
+  },
+  "macro.hFiveRefLim": {
+   "field": "H5.reference_limited",
+   "printed": "8",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 8
+  },
+  "macro.hFiveTau": {
+   "field": "H5.tau",
+   "printed": "0.739",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 0.7389743346238365
+  },
+  "macro.hSixFourth": {
+   "field": "fourth_mse_rel x100",
+   "printed": "4.7",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 4.695487050770749
+  },
+  "macro.hSixGammaCand": {
+   "field": "candidate_mse_rel x100",
+   "printed": "0.09",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 0.08554953695326685
+  },
+  "macro.hSixGammaCandAllow": {
+   "field": "candidate_allowance",
+   "printed": "0.0042",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 0.004195188922859402
+  },
+  "macro.hSixGammaKG": {
+   "field": "gaussian_mse_rel x100",
+   "printed": "0.45",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 0.44582500576155776
+  },
+  "macro.hSixGammaKGAllow": {
+   "field": "gaussian_allowance",
+   "printed": "0.064",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 0.06375721507931816
+  },
+  "macro.hSixGammaRatio": {
+   "field": "time_ratio",
+   "printed": "39",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 38.51717810043767
+  },
+  "macro.hSixLaplaceCand": {
+   "field": "candidate_mse_rel x100",
+   "printed": "0.19",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "value": 0.1893766877092718
+  },
+  "macro.hSixLaplaceCandAllow": {
+   "field": "candidate_allowance",
+   "printed": "0.0023",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "value": 0.0023335002741036765
+  },
+  "macro.hSixLaplaceKG": {
+   "field": "gaussian_mse_rel x100",
+   "printed": "0.38",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "value": 0.38392115380808844
+  },
+  "macro.hSixLaplaceKGAllow": {
+   "field": "gaussian_allowance",
+   "printed": "0.012",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "value": 0.012412665250285162
+  },
+  "macro.hSixLaplaceRatio": {
+   "field": "time_ratio",
+   "printed": "32",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "value": 31.59037259921676
+  },
+  "macro.hSixThird": {
+   "field": "third_mse_rel x100",
+   "printed": "537",
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "value": 536.7200306161589
+  },
+  "macro.hTwoHi": {
+   "field": "H2.all_panels.upper95",
+   "printed": "\\ensuremath{-1.56}",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": -1.5585168269482261
+  },
+  "macro.hTwoLo": {
+   "field": "H2.all_panels.lower95",
+   "printed": "\\ensuremath{-1.64}",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": -1.6439164715420553
+  },
+  "macro.hTwoN": {
+   "field": "H2.all_panels.n",
+   "printed": "50",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": 50
+  },
+  "macro.hTwoSlope": {
+   "field": "H2.all_panels.slope",
+   "printed": "\\ensuremath{-1.60}",
+   "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
+   "value": -1.6012166492451407
+  },
+  "macro.kgErrHi": {
+   "field": "gaussian_allowance, dense n=32, Gamma(1) d16/d64 and Laplace d16",
+   "printed": "0.149",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.14866642117682907
+  },
+  "macro.kgErrLo": {
+   "field": "gaussian_allowance, dense n=32, Gamma(1) d16/d64 and Laplace d16",
+   "printed": "0.011",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.011445145224413375
+  },
+  "macro.lapFailHi": {
+   "field": "candidate_allowance of CANDIDATE_FAIL panels, Laplace d=16",
+   "printed": "0.0034",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.003419928708999057
+  },
+  "macro.lapFailLo": {
+   "field": "candidate_allowance of CANDIDATE_FAIL panels, Laplace d=16",
+   "printed": "0.0033",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.003252786494330382
+  },
+  "macro.psdMin": {
+   "field": "candidate_mineig (min)",
+   "printed": "\\ensuremath{-7.4\\times10^{-17}}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -7.417580229250229e-17
+  },
+  "macro.psdNeg": {
+   "field": "candidate_mineig < -1e-10",
+   "printed": "0",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0
+  },
+  "macro.psdPanels": {
+   "field": "count of run-1 panels",
+   "printed": "240",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 240
+  },
+  "macro.sensFiveGammaOne": {
+   "field": "candidate_allowance <= 0.005, gate gamma1 d=64, n=32 and 128",
+   "printed": "20",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 20
+  },
+  "macro.sensFiveLaplace": {
+   "field": "candidate_allowance <= 0.005, gate laplace d=16, n=32 and 128",
+   "printed": "20",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 20
+  },
+  "macro.sensTwoGammaOne": {
+   "field": "candidate_allowance <= 0.002, gate gamma1 d=64, n=32 and 128",
+   "printed": "16",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 16
+  },
+  "macro.sensTwoLaplace": {
+   "field": "candidate_allowance <= 0.002, gate laplace d=16, n=32 and 128",
+   "printed": "0",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0
+  },
+  "macro.slopeGammaFour": {
+   "field": "OLS slope of log candidate_error on log d, dense gamma4 n=32, d=16/64/128",
+   "printed": "\\ensuremath{-1.55}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -1.548928233336204
+  },
+  "macro.slopeLaplace": {
+   "field": "OLS slope of log candidate_error on log d, dense laplace n=32, d=16/64/128",
+   "printed": "\\ensuremath{-1.92}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -1.9159835268665046
+  },
+  "macro.slopeUniform": {
+   "field": "OLS slope of log candidate_error on log d, dense uniform n=32, d=16/64/128",
+   "printed": "\\ensuremath{-2.25}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -2.24667168996348
+  },
+  "macro.trMax": {
+   "field": "time_ratio, PASS panels, both sessions (max)",
+   "printed": "0.63",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.6319769154285104
+  },
+  "macro.trMin": {
+   "field": "time_ratio, PASS panels, both sessions (min)",
+   "printed": "0.03",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": 0.028516424591092004
+  },
+  "tab_cost.gamma1_d64_n128": {
+   "median_candidate_seconds": 0.025741167017258704,
+   "median_cf_level": 8.0,
+   "median_cf_seconds": 0.7080384999280795,
+   "median_conditional_seconds": 31.533082791953348,
+   "median_qcv_seconds": 0.2764155624900013,
+   "median_sobol_seconds": 0.2125878749648109,
+   "order1_fails": 10,
+   "order2_fails": 0,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1"
+  },
+  "tab_cost.gamma1_d64_n32": {
+   "median_candidate_seconds": 0.001515479409135878,
+   "median_cf_level": 8.0,
+   "median_cf_seconds": 0.040448958054184914,
+   "median_conditional_seconds": 1.1678775624604896,
+   "median_qcv_seconds": 0.058692729100584984,
+   "median_sobol_seconds": 0.05526560393627733,
+   "order1_fails": 10,
+   "order2_fails": 0,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1"
+  },
+  "tab_cost.laplace_d16_n128": {
+   "median_candidate_seconds": 0.011250771000050008,
+   "median_cf_level": 8.0,
+   "median_cf_seconds": 0.12827924999874085,
+   "median_conditional_seconds": 13.750363082974218,
+   "median_qcv_seconds": 0.048665312584489584,
+   "median_sobol_seconds": 0.03234829206485301,
+   "order1_fails": 10,
+   "order2_fails": 1,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1"
+  },
+  "tab_cost.laplace_d16_n32": {
+   "median_candidate_seconds": 0.0008573754457756877,
+   "median_cf_level": 8.0,
+   "median_cf_seconds": 0.0074711249908432364,
+   "median_conditional_seconds": 0.5992202084744349,
+   "median_qcv_seconds": 0.019474166561849415,
+   "median_sobol_seconds": 0.017769375001080334,
+   "order1_fails": 10,
+   "order2_fails": 1,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1"
+  },
+  "tab_digits.gamma1.candidate": {
+   "allowance": 0.004195188922859402,
+   "rel_diff_pct": 0.08554953695326685,
+   "seconds": 8.561901667155325,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "test_acc": 0.9814814814814815,
+   "test_mse": 0.008215664303501504
+  },
+  "tab_digits.gamma1.fourth": {
+   "allowance": 0.016614705708230395,
+   "rel_diff_pct": 4.695487050770749,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "test_acc": null,
+   "test_mse": 0.00859407756344628
+  },
+  "tab_digits.gamma1.gaussian": {
+   "allowance": 0.06375721507931816,
+   "rel_diff_pct": 0.44582500576155776,
+   "seconds": 0.22228787490166724,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "test_acc": 0.9833333333333333,
+   "test_mse": 0.008172045670416418
+  },
+  "tab_digits.gamma1.ref": {
+   "allowance": null,
+   "rel_diff_pct": null,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "test_acc": 0.9814814814814815,
+   "test_mse": 0.008208641848410038
+  },
+  "tab_digits.gamma1.third": {
+   "allowance": 0.013980058602031819,
+   "rel_diff_pct": 536.7200306161589,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
+   "test_acc": null,
+   "test_mse": 0.05226606689036722
+  },
+  "tab_digits.laplace.candidate": {
+   "allowance": 0.0023335002741036765,
+   "rel_diff_pct": 0.1893766877092718,
+   "seconds": 5.99004404200241,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "test_acc": 0.9814814814814815,
+   "test_mse": 0.00812537468875141
+  },
+  "tab_digits.laplace.fourth": {
+   "allowance": 0.0023335002741036765,
+   "rel_diff_pct": 0.1893766877092718,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "test_acc": null,
+   "test_mse": 0.00812537468875141
+  },
+  "tab_digits.laplace.gaussian": {
+   "allowance": 0.012412665250285162,
+   "rel_diff_pct": 0.38392115380808844,
+   "seconds": 0.1896161250770092,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "test_acc": 0.9833333333333333,
+   "test_mse": 0.008172045670416418
+  },
+  "tab_digits.laplace.ref": {
+   "allowance": null,
+   "rel_diff_pct": null,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "test_acc": 0.9814814814814815,
+   "test_mse": 0.00814079144995265
+  },
+  "tab_digits.laplace.third": {
+   "allowance": 0.012412665250285162,
+   "rel_diff_pct": 0.38392115380808844,
+   "seconds": null,
+   "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
+   "test_acc": null,
+   "test_mse": 0.008172045670416418
+  },
+  "tab_gate.gamma1_d64_n128_session1": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 10,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "time_ratio_max": 0.21262905791414832,
+   "time_ratio_median": 0.13260182684934124,
+   "time_ratio_min": 0.11965334034375788
+  },
+  "tab_gate.gamma1_d64_n128_session2": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 10,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s2",
+   "time_ratio_max": 0.16940076769647744,
+   "time_ratio_median": 0.14376205658928648,
+   "time_ratio_min": 0.11197073786501739
+  },
+  "tab_gate.gamma1_d64_n32_session1": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 10,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "time_ratio_max": 0.04055390983248329,
+   "time_ratio_median": 0.037938368077102935,
+   "time_ratio_min": 0.0324035493010518
+  },
+  "tab_gate.gamma1_d64_n32_session2": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 10,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s2",
+   "time_ratio_max": 0.08048551900470584,
+   "time_ratio_median": 0.03752320190687018,
+   "time_ratio_min": 0.028516424591092004
+  },
+  "tab_gate.laplace_d16_n128_session1": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 9,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "time_ratio_max": 0.6319769154285104,
+   "time_ratio_median": 0.29438111364825026,
+   "time_ratio_min": 0.23777317515112167
+  },
+  "tab_gate.laplace_d16_n128_session2": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 9,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s2",
+   "time_ratio_max": 0.3227470035740784,
+   "time_ratio_median": 0.30658398547150967,
+   "time_ratio_min": 0.2888804477497783
+  },
+  "tab_gate.laplace_d16_n32_session1": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 9,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "time_ratio_max": 0.12836268099679046,
+   "time_ratio_median": 0.11734059901313051,
+   "time_ratio_min": 0.07393002576420955
+  },
+  "tab_gate.laplace_d16_n32_session2": {
+   "kg_fails": 10,
+   "panels": 10,
+   "pass_panels": 9,
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s2",
+   "time_ratio_max": 0.1292903338850372,
+   "time_ratio_median": 0.11546323861287365,
+   "time_ratio_min": 0.10802199789507043
+  }
+ }
+}

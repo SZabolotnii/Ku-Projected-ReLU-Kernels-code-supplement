@@ -1,0 +1,7 @@
+{
+  "evidence/projected_cumulant/analysis.json": "511f5e5f39307bd641d81c702d2cb5b2bdc5c5805606ef8bd525af3d33dcde80",
+  "evidence/projected_cumulant/summary.csv": "9f2380e9c6236a683b3820d8827810e0b4540dbcc360b8aaee9e6c0e5dd9f30b",
+  "evidence/projected_cumulant/comparisons.csv": "5dff3264eaf5328883d796e567d88a051a609068d77d65ff6c7edb61f67ed87e",
+  "PROJECTED_CUMULANT_REPORT_UA.md": "493b05cccd562f9d87cf8f138975211e1b3747e697448b0c09bc329eb3371f2d",
+  "scripts/projected_report.py": "a2d686f9d628f4e6ac7cb84134944435342af4b53258c576937176cb42ef3d30"
+}

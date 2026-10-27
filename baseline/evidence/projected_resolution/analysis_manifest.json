@@ -1,0 +1,17 @@
+{
+  "evidence/projected_resolution/analysis.json": "b6c1a40572e6532de76db7c6017298ba7fa925add440f255cde48552072f5672",
+  "evidence/projected_resolution/summary.csv": "3e80821ef02cb4c940d94d6efd2eb812ad42b49cf5473942b903b55637299147",
+  "evidence/projected_resolution/comparisons.csv": "239e962234b1398096f974864d3d7427c43416b2ca4426416ff645994fa29266",
+  "evidence/projected_resolution/verification.json": "92df2583cece70711c04c4a3490eca1c601bf0467671067352ed6060a714d400",
+  "PROJECTED_RESOLVED_REPORT_UA.md": "e7dc5ef26c3c45845406bbd1159d7cbb530e1dc1d78c9af703da0a39018fa07a",
+  "scripts/projected_report.py": "a2d686f9d628f4e6ac7cb84134944435342af4b53258c576937176cb42ef3d30",
+  "PROJECTED_COMPLETION_AUDIT.md": "3e06c63d43b40fd72b4d43ebd4c8ffd79b17ca94b4d6e6f5cae60406c9f98347",
+  "PROJECTED_DERIVATION_UA.md": "fccab5bffb25ba10b5881618907272f2d774d51b1997d84b8651d67a55f7cc1b",
+  "scripts/projected_resolve_verify.py": "e93752ea1f916fc6d06584eeb8a4275461368b825382954752d61881f8638b38",
+  "scripts/projected_plot.py": "77bf4bd5967f7b1e4951fc10975886ed3a50e9c7751ccb761e939f12471787e3",
+  "scripts/projected_finalize.py": "3a2948d63d37fef3a099eecdf3a1cb94b54025668fbc6383edb96a621fdc8939",
+  "evidence/projected_resolution/time_accuracy.png": "527992cb36ae36b510d3796cf17d7c6c677bf61d3f138d085919a3d72cf3c790",
+  "evidence/projected_resolution/time_accuracy.pdf": "face9c9492acc36f1c3873e74d55f58ca7bb41e80329ea754a3aa83c1a33d84b",
+  "evidence/projected_resolution/geometry_accuracy.png": "a763c5641fd7818ac78de3499acdb015988ec06f154d55670e87a05916bd781a",
+  "evidence/projected_resolution/geometry_accuracy.pdf": "50bf97abaf03adc7e66d9f9bf8973827961de3314fa777a55fb03fa66c876ac5"
+}

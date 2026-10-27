@@ -1,0 +1,14 @@
+{
+  "cell": "control=split__dcbd7ff7",
+  "params": {
+    "control": "split"
+  },
+  "seconds": 0.55,
+  "values": {
+    "n_test": 540.0,
+    "n_train": 1257.0,
+    "norm_gap": 2.220446049250313e-16,
+    "strat_gap": 0.6000000000000014
+  },
+  "written": "2026-10-26T05:41:52+00:00"
+}

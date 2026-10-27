@@ -1,0 +1,2213 @@
+{
+  "transfer_gate": false,
+  "cells": [
+    {
+      "cell": "gamma1_d16_p0",
+      "law": "gamma1",
+      "d": 16,
+      "panel": 0,
+      "u": 0.00029392837832383303,
+      "status": "CANDIDATE_FAIL",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.01302885724074382,
+        "error": 0.012731099311539802,
+        "psd": true,
+        "seconds": 0.000618291087448597,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.12934297484482785,
+        "error": 0.12901102889566027,
+        "psd": true,
+        "seconds": 5.116686224937439e-05,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.0022289519828877845,
+        "error": 0.0019343684523222596,
+        "psd": true,
+        "seconds": 0.0085702920332551,
+        "eligible": true
+      },
+      "ratio": 0.07214352615400464,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.12934297484482785,
+          "error": 0.12901102889566027,
+          "psd": true,
+          "seconds": 5.116686224937439e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.01302885724074382,
+          "error": 0.012731099311539802,
+          "psd": true,
+          "seconds": 0.000618291087448597,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.014328969084897605,
+          "error": 0.014030829015927596,
+          "psd": true,
+          "seconds": 0.0007744585163891315,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.012969394796629641,
+          "error": 0.012671654345125393,
+          "psd": true,
+          "seconds": 0.0009633124573156238,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.005235107310306991,
+          "error": 0.0049396401853810884,
+          "psd": true,
+          "seconds": 0.00233352102804929,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.005159276390136383,
+          "error": 0.004863831554069873,
+          "psd": true,
+          "seconds": 0.002841791952960193,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.0022289519828877845,
+          "error": 0.0019343684523222596,
+          "psd": true,
+          "seconds": 0.0085702920332551,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.0021878747960099956,
+          "error": 0.0018933033391953956,
+          "psd": true,
+          "seconds": 0.010775167029350996,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0010796665116720972,
+          "error": 0.0007854207887213579,
+          "psd": true,
+          "seconds": 0.033546083490364254,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.00107337908459766,
+          "error": 0.0007791352097001646,
+          "psd": true,
+          "seconds": 0.041170583572238684,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d16_p1",
+      "law": "gamma1",
+      "d": 16,
+      "panel": 1,
+      "u": 0.0002879640930124617,
+      "status": "CANDIDATE_FAIL",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.014686909560479338,
+        "error": 0.014394716164876137,
+        "psd": true,
+        "seconds": 0.000650458037853241,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.13409984730755675,
+        "error": 0.13377326727364125,
+        "psd": true,
+        "seconds": 5.0208065658807755e-05,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.0022350390247727345,
+        "error": 0.0019464313207746566,
+        "psd": true,
+        "seconds": 0.008589895442128181,
+        "eligible": true
+      },
+      "ratio": 0.07572362693300576,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.13409984730755675,
+          "error": 0.13377326727364125,
+          "psd": true,
+          "seconds": 5.0208065658807755e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.014686909560479338,
+          "error": 0.014394716164876137,
+          "psd": true,
+          "seconds": 0.000650458037853241,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.01392143678188464,
+          "error": 0.01362946381495585,
+          "psd": true,
+          "seconds": 0.0008365005487576127,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.012518799403259635,
+          "error": 0.012227230345531408,
+          "psd": true,
+          "seconds": 0.0009282294195145369,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.0050547693453353295,
+          "error": 0.004765349660252952,
+          "psd": true,
+          "seconds": 0.002342874533496797,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.004969859132444991,
+          "error": 0.004680463898455055,
+          "psd": true,
+          "seconds": 0.0028310001362115145,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.0022350390247727345,
+          "error": 0.0019464313207746566,
+          "psd": true,
+          "seconds": 0.008589895442128181,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.0021912639498269043,
+          "error": 0.0019026688514785796,
+          "psd": true,
+          "seconds": 0.010645270929671824,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0011135123723338258,
+          "error": 0.0008252276277410068,
+          "psd": true,
+          "seconds": 0.03346493758726865,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0010903911042676668,
+          "error": 0.0008021130177698356,
+          "psd": true,
+          "seconds": 0.04157802159897983,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d16_p2",
+      "law": "gamma1",
+      "d": 16,
+      "panel": 2,
+      "u": 0.00014705853991560074,
+      "status": "CANDIDATE_FAIL",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.012284872668064517,
+        "error": 0.012136007532711303,
+        "psd": true,
+        "seconds": 0.0006382919382303953,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.12654424481141133,
+        "error": 0.12637857685961906,
+        "psd": true,
+        "seconds": 5.63750509172678e-05,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.002065338815185521,
+        "error": 0.0019179765495593284,
+        "psd": true,
+        "seconds": 0.00858402089215815,
+        "eligible": true
+      },
+      "ratio": 0.0743581529273188,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.12654424481141133,
+          "error": 0.12637857685961906,
+          "psd": true,
+          "seconds": 5.63750509172678e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.012284872668064517,
+          "error": 0.012136007532711303,
+          "psd": true,
+          "seconds": 0.0006382919382303953,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.013756744602934894,
+          "error": 0.013607663016243995,
+          "psd": true,
+          "seconds": 0.0008063958957791328,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.012015518642999221,
+          "error": 0.011866693118455653,
+          "psd": true,
+          "seconds": 0.0009741665562614799,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.005339615934564835,
+          "error": 0.005191772158526188,
+          "psd": true,
+          "seconds": 0.002329083625227213,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.005027749389014731,
+          "error": 0.00487995147561492,
+          "psd": true,
+          "seconds": 0.002834854065440595,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.002065338815185521,
+          "error": 0.0019179765495593284,
+          "psd": true,
+          "seconds": 0.00858402089215815,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.0019622987543619083,
+          "error": 0.001814951641656613,
+          "psd": true,
+          "seconds": 0.010628458112478256,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0009898027234310847,
+          "error": 0.0008425986245721718,
+          "psd": true,
+          "seconds": 0.03360300010535866,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0009864248716479386,
+          "error": 0.0008392212695309769,
+          "psd": true,
+          "seconds": 0.04152087448164821,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d64_p0",
+      "law": "gamma1",
+      "d": 64,
+      "panel": 0,
+      "u": 0.0003842702427923445,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0021777732899295682,
+        "error": 0.001792666193666356,
+        "psd": true,
+        "seconds": 0.0015104159247130156,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.038924686320492646,
+        "error": 0.03852545847903731,
+        "psd": true,
+        "seconds": 7.258309051394463e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.038924686320492646,
+          "error": 0.03852545847903731,
+          "psd": true,
+          "seconds": 7.258309051394463e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0021777732899295682,
+          "error": 0.001792666193666356,
+          "psd": true,
+          "seconds": 0.0015104159247130156,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.02351452039695328,
+          "error": 0.023121214223698852,
+          "psd": true,
+          "seconds": 0.002635812503285706,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.02079086201083324,
+          "error": 0.020398602458448132,
+          "psd": true,
+          "seconds": 0.002736104535870254,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.01066888332147796,
+          "error": 0.010280513344301348,
+          "psd": true,
+          "seconds": 0.007333583547733724,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010392350759893879,
+          "error": 0.010004087045951847,
+          "psd": true,
+          "seconds": 0.007893291534855962,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.005329817424784064,
+          "error": 0.0049434990917558595,
+          "psd": true,
+          "seconds": 0.026735374587588012,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005300052456853048,
+          "error": 0.004913745561616297,
+          "psd": true,
+          "seconds": 0.02890906250104308,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0023527050448149673,
+          "error": 0.0019675307274838335,
+          "psd": true,
+          "seconds": 0.10392702056560665,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.002354241458292756,
+          "error": 0.0019690665505636418,
+          "psd": true,
+          "seconds": 0.11246281256899238,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d64_p1",
+      "law": "gamma1",
+      "d": 64,
+      "panel": 1,
+      "u": 0.00037529590026781206,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0020100804508081313,
+        "error": 0.0016340301755879223,
+        "psd": true,
+        "seconds": 0.0015049590729176998,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.03566547704359345,
+        "error": 0.03527679603601008,
+        "psd": true,
+        "seconds": 6.937514990568161e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.03566547704359345,
+          "error": 0.03527679603601008,
+          "psd": true,
+          "seconds": 6.937514990568161e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0020100804508081313,
+          "error": 0.0016340301755879223,
+          "psd": true,
+          "seconds": 0.0015049590729176998,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.022751523848346927,
+          "error": 0.022367689394453983,
+          "psd": true,
+          "seconds": 0.002544021001085639,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.021155576772761597,
+          "error": 0.020772341271263164,
+          "psd": true,
+          "seconds": 0.0027369795134291053,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.010762453210896462,
+          "error": 0.010383118206061775,
+          "psd": true,
+          "seconds": 0.007525020628236234,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010298005054971523,
+          "error": 0.009918844355625641,
+          "psd": true,
+          "seconds": 0.007901938050054014,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.005112322758860118,
+          "error": 0.004735108224820059,
+          "psd": true,
+          "seconds": 0.027125166496261954,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005010475829237782,
+          "error": 0.004633299517932866,
+          "psd": true,
+          "seconds": 0.029155583470128477,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.002547598937218025,
+          "error": 0.0021713469335135484,
+          "psd": true,
+          "seconds": 0.10642264550551772,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0025419153055886916,
+          "error": 0.002165665434927864,
+          "psd": true,
+          "seconds": 0.11217468709219247,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d64_p2",
+      "law": "gamma1",
+      "d": 64,
+      "panel": 2,
+      "u": 0.000344128905050625,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.002269725220043622,
+        "error": 0.0019248152369382577,
+        "psd": true,
+        "seconds": 0.0015735828783363104,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.040624416325077545,
+        "error": 0.04026630738411865,
+        "psd": true,
+        "seconds": 7.162499241530895e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.040624416325077545,
+          "error": 0.04026630738411865,
+          "psd": true,
+          "seconds": 7.162499241530895e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.002269725220043622,
+          "error": 0.0019248152369382577,
+          "psd": true,
+          "seconds": 0.0015735828783363104,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.023662756121941655,
+          "error": 0.023310484178536307,
+          "psd": true,
+          "seconds": 0.0025300829438492656,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.020861961263672586,
+          "error": 0.020510653154735086,
+          "psd": true,
+          "seconds": 0.0026866249972954392,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.010569728211834403,
+          "error": 0.010221961957787556,
+          "psd": true,
+          "seconds": 0.007563561899587512,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010163237639231985,
+          "error": 0.009815611270340802,
+          "psd": true,
+          "seconds": 0.008060374879278243,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.004810808198410446,
+          "error": 0.004465023755202094,
+          "psd": true,
+          "seconds": 0.02696343755815178,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.004741617365897053,
+          "error": 0.004395856733254133,
+          "psd": true,
+          "seconds": 0.029404229018837214,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.002276048238693037,
+          "error": 0.001931136079654188,
+          "psd": true,
+          "seconds": 0.10629283345770091,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0022660173030291404,
+          "error": 0.001921108595925198,
+          "psd": true,
+          "seconds": 0.11455429205670953,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d128_p0",
+      "law": "gamma1",
+      "d": 128,
+      "panel": 0,
+      "u": 0.0007383687543536622,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0013773152608368314,
+        "error": 0.0006379295399296729,
+        "psd": true,
+        "seconds": 0.0026963339187204838,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.020311989036480637,
+        "error": 0.019558622544083665,
+        "psd": true,
+        "seconds": 8.949986658990383e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.020311989036480637,
+          "error": 0.019558622544083665,
+          "psd": true,
+          "seconds": 8.949986658990383e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0013773152608368314,
+          "error": 0.0006379295399296729,
+          "psd": true,
+          "seconds": 0.0026963339187204838,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.025928303544485855,
+          "error": 0.02517079014094155,
+          "psd": true,
+          "seconds": 0.004879791638813913,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.021314468935783145,
+          "error": 0.02056036224355166,
+          "psd": true,
+          "seconds": 0.005048250081017613,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.012112707581335168,
+          "error": 0.011365395182172826,
+          "psd": true,
+          "seconds": 0.016148749506101012,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.011341711126500351,
+          "error": 0.010594968007029975,
+          "psd": true,
+          "seconds": 0.01714447943959385,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.0058941498601783,
+          "error": 0.005151429049734404,
+          "psd": true,
+          "seconds": 0.056345082935877144,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005825789784240236,
+          "error": 0.005083119448740458,
+          "psd": true,
+          "seconds": 0.05737918755039573,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0034910380531819503,
+          "error": 0.0027500916254095593,
+          "psd": true,
+          "seconds": 0.21716595848556608,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.003455766144981281,
+          "error": 0.0027148457608838117,
+          "psd": true,
+          "seconds": 0.23476124997250736,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d128_p1",
+      "law": "gamma1",
+      "d": 128,
+      "panel": 1,
+      "u": 0.0006774176065554268,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0011708925111729546,
+        "error": 0.0004926817214150754,
+        "psd": true,
+        "seconds": 0.0026657499838620424,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.02390356741996988,
+        "error": 0.02320995711598468,
+        "psd": true,
+        "seconds": 8.904095739126205e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.02390356741996988,
+          "error": 0.02320995711598468,
+          "psd": true,
+          "seconds": 8.904095739126205e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0011708925111729546,
+          "error": 0.0004926817214150754,
+          "psd": true,
+          "seconds": 0.0026657499838620424,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.02463796323609891,
+          "error": 0.023943855439457686,
+          "psd": true,
+          "seconds": 0.006150229135528207,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.02080949211474584,
+          "error": 0.02011797779184841,
+          "psd": true,
+          "seconds": 0.006436229450628161,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.011846732981730047,
+          "error": 0.011161290189672636,
+          "psd": true,
+          "seconds": 0.01709654158912599,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010817005371110706,
+          "error": 0.010132260134666685,
+          "psd": true,
+          "seconds": 0.018241395941004157,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.006003989514414132,
+          "error": 0.005322504699652068,
+          "psd": true,
+          "seconds": 0.058596229064278305,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005848759555737974,
+          "error": 0.005167379896482981,
+          "psd": true,
+          "seconds": 0.06032270786818117,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0031958296417185705,
+          "error": 0.0025162471238962918,
+          "psd": true,
+          "seconds": 0.21969422907568514,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0031754382530235718,
+          "error": 0.002495869548687017,
+          "psd": true,
+          "seconds": 0.22401929192710668,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "gamma1_d128_p2",
+      "law": "gamma1",
+      "d": 128,
+      "panel": 2,
+      "u": 0.0006155685024128418,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0012126764706645622,
+        "error": 0.0005963614828127619,
+        "psd": true,
+        "seconds": 0.002642042003571987,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.023108919665669997,
+        "error": 0.02247912604018618,
+        "psd": true,
+        "seconds": 8.499994874000549e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.023108919665669997,
+          "error": 0.02247912604018618,
+          "psd": true,
+          "seconds": 8.499994874000549e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0012126764706645622,
+          "error": 0.0005963614828127619,
+          "psd": true,
+          "seconds": 0.002642042003571987,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.024844703055366547,
+          "error": 0.024213840936301023,
+          "psd": true,
+          "seconds": 0.004852520534768701,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.022194782621053327,
+          "error": 0.021565551709541064,
+          "psd": true,
+          "seconds": 0.004986895946785808,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.011494601333656315,
+          "error": 0.010871957116714681,
+          "psd": true,
+          "seconds": 0.016414687619544566,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.01098323279097441,
+          "error": 0.010360903356400776,
+          "psd": true,
+          "seconds": 0.01697668747510761,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.005692306003034009,
+          "error": 0.005073233496339604,
+          "psd": true,
+          "seconds": 0.057728417101316154,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005626371289850035,
+          "error": 0.005007339370488282,
+          "psd": true,
+          "seconds": 0.05963091691955924,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0031438683213913495,
+          "error": 0.0025263645526641255,
+          "psd": true,
+          "seconds": 0.21643806237261742,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.003109837771596436,
+          "error": 0.0024923549510037857,
+          "psd": true,
+          "seconds": 0.22417287505231798,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d16_p0",
+      "law": "laplace",
+      "d": 16,
+      "panel": 0,
+      "u": 0.00014563126670844658,
+      "status": "PASS",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.002518851454218038,
+        "error": 0.0023728533639816632,
+        "psd": true,
+        "seconds": 0.0006368749309331179,
+        "eligible": true
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.012288145288606387,
+        "error": 0.012140724483734064,
+        "psd": true,
+        "seconds": 5.6040938943624496e-05,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.002186504914611413,
+        "error": 0.0020405552244225876,
+        "psd": true,
+        "seconds": 0.01343570847529918,
+        "eligible": true
+      },
+      "ratio": 0.04740166341834358,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.012288145288606387,
+          "error": 0.012140724483734064,
+          "psd": true,
+          "seconds": 5.6040938943624496e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.002518851454218038,
+          "error": 0.0023728533639816632,
+          "psd": true,
+          "seconds": 0.0006368749309331179,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.014186306721283726,
+          "error": 0.014038609484757545,
+          "psd": true,
+          "seconds": 0.0012634169543161988,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.013520867430843818,
+          "error": 0.01337326710308442,
+          "psd": true,
+          "seconds": 0.0014229374937713146,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.005530769660722723,
+          "error": 0.005384332941022713,
+          "psd": true,
+          "seconds": 0.0037268544547259808,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.005322119182342523,
+          "error": 0.005175712848675979,
+          "psd": true,
+          "seconds": 0.004137812415137887,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.002186504914611413,
+          "error": 0.0020405552244225876,
+          "psd": true,
+          "seconds": 0.01343570847529918,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.002122770847646807,
+          "error": 0.0019768304391308855,
+          "psd": true,
+          "seconds": 0.015688853920437396,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0010676672912941095,
+          "error": 0.0009218805388456087,
+          "psd": true,
+          "seconds": 0.051735311979427934,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0010631737437530738,
+          "error": 0.0009173876457055934,
+          "psd": true,
+          "seconds": 0.0595673545030877,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d16_p1",
+      "law": "laplace",
+      "d": 16,
+      "panel": 1,
+      "u": 0.00014366575786110735,
+      "status": "PASS",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0029209188128888836,
+        "error": 0.002776833419012872,
+        "psd": true,
+        "seconds": 0.0007045830134302378,
+        "eligible": true
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.014197934518671615,
+        "error": 0.014052229003787822,
+        "psd": true,
+        "seconds": 0.00017387489788234234,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.002341260146338727,
+        "error": 0.002197258029564346,
+        "psd": true,
+        "seconds": 0.014582645962946117,
+        "eligible": true
+      },
+      "ratio": 0.04831654112844495,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.014197934518671615,
+          "error": 0.014052229003787822,
+          "psd": true,
+          "seconds": 0.00017387489788234234,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0029209188128888836,
+          "error": 0.002776833419012872,
+          "psd": true,
+          "seconds": 0.0007045830134302378,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.015224925699508136,
+          "error": 0.01507907264115803,
+          "psd": true,
+          "seconds": 0.0015955830458551645,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.013857645045249965,
+          "error": 0.013711988418311264,
+          "psd": true,
+          "seconds": 0.0018762079998850822,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.005575123580923366,
+          "error": 0.005430656868707836,
+          "psd": true,
+          "seconds": 0.004141625016927719,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.005269370525963861,
+          "error": 0.00512494773999269,
+          "psd": true,
+          "seconds": 0.004767937469296157,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.002341260146338727,
+          "error": 0.002197258029564346,
+          "psd": true,
+          "seconds": 0.014582645962946117,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.002310464709198563,
+          "error": 0.0021664670166739973,
+          "psd": true,
+          "seconds": 0.016844708006829023,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0012816107817061986,
+          "error": 0.0011377609002608546,
+          "psd": true,
+          "seconds": 0.05877079186029732,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0012699402563130702,
+          "error": 0.0011260920515226015,
+          "psd": true,
+          "seconds": 0.0702084795339033,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d16_p2",
+      "law": "laplace",
+      "d": 16,
+      "panel": 2,
+      "u": 0.0001659714915274925,
+      "status": "PASS",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0024477142382706043,
+        "error": 0.0022813364959601533,
+        "psd": true,
+        "seconds": 0.0006955000571906567,
+        "eligible": true
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.011844528945803704,
+        "error": 0.011676591600140635,
+        "psd": true,
+        "seconds": 5.737505853176117e-05,
+        "eligible": false
+      },
+      "best": {
+        "method": "sobol",
+        "n": 65536,
+        "bound": 0.00221297555443465,
+        "error": 0.002046636772053674,
+        "psd": true,
+        "seconds": 0.014664437505416572,
+        "eligible": true
+      },
+      "ratio": 0.04742766689371899,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.011844528945803704,
+          "error": 0.011676591600140635,
+          "psd": true,
+          "seconds": 5.737505853176117e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0024477142382706043,
+          "error": 0.0022813364959601533,
+          "psd": true,
+          "seconds": 0.0006955000571906567,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.015193152462361824,
+          "error": 0.015024659340659148,
+          "psd": true,
+          "seconds": 0.0011683334596455097,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.013855194321181524,
+          "error": 0.01368692326238714,
+          "psd": true,
+          "seconds": 0.0013109995052218437,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.005990036482185449,
+          "error": 0.0058230708153687045,
+          "psd": true,
+          "seconds": 0.003575375070795417,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.0058266303890119825,
+          "error": 0.0056596918429482465,
+          "psd": true,
+          "seconds": 0.003994875121861696,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.00221297555443465,
+          "error": 0.002046636772053674,
+          "psd": true,
+          "seconds": 0.014664437505416572,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.002213009745419541,
+          "error": 0.002046670957363836,
+          "psd": true,
+          "seconds": 0.017049520974978805,
+          "eligible": true
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.001203063456933449,
+          "error": 0.001036892291169607,
+          "psd": true,
+          "seconds": 0.05507754138670862,
+          "eligible": true
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0011869631625076997,
+          "error": 0.0010207946689337374,
+          "psd": true,
+          "seconds": 0.06419649987947196,
+          "eligible": true
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d64_p0",
+      "law": "laplace",
+      "d": 64,
+      "panel": 0,
+      "u": 0.0003872748851382781,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0006275175178965162,
+        "error": 0.00023999961098357248,
+        "psd": true,
+        "seconds": 0.007710624951869249,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.002812948673543362,
+        "error": 0.0024245844040306375,
+        "psd": true,
+        "seconds": 8.108303882181644e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.002812948673543362,
+          "error": 0.0024245844040306375,
+          "psd": true,
+          "seconds": 8.108303882181644e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0006275175178965162,
+          "error": 0.00023999961098357248,
+          "psd": true,
+          "seconds": 0.007710624951869249,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.021894997566710046,
+          "error": 0.021499243298904017,
+          "psd": true,
+          "seconds": 0.005654979031533003,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.019656887948412805,
+          "error": 0.01926200044425213,
+          "psd": true,
+          "seconds": 0.006328437477350235,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.010780339040037926,
+          "error": 0.010388889200336166,
+          "psd": true,
+          "seconds": 0.018584416480734944,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.01038017044648557,
+          "error": 0.009988875582029913,
+          "psd": true,
+          "seconds": 0.01972368697170168,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.0052147154772303195,
+          "error": 0.004825421063754569,
+          "psd": true,
+          "seconds": 0.058963416959159076,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.00513381644524636,
+          "error": 0.0047445533619339285,
+          "psd": true,
+          "seconds": 0.05704377044457942,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0023483567213021294,
+          "error": 0.0019601723765843453,
+          "psd": true,
+          "seconds": 0.19249277096241713,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.002338209998135135,
+          "error": 0.0019500295829884,
+          "psd": true,
+          "seconds": 0.20229818706866354,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d64_p1",
+      "law": "laplace",
+      "d": 64,
+      "panel": 1,
+      "u": 0.00037933438832622133,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0005816890139542919,
+        "error": 0.00020213397098176603,
+        "psd": true,
+        "seconds": 0.0016810840461403131,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.0026611865799086856,
+        "error": 0.002280842711998953,
+        "psd": true,
+        "seconds": 7.558311335742474e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.0026611865799086856,
+          "error": 0.002280842711998953,
+          "psd": true,
+          "seconds": 7.558311335742474e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0005816890139542919,
+          "error": 0.00020213397098176603,
+          "psd": true,
+          "seconds": 0.0016810840461403131,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.02304179147818325,
+          "error": 0.02265371654598071,
+          "psd": true,
+          "seconds": 0.0039266039384528995,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.02110779957861498,
+          "error": 0.02072045827604669,
+          "psd": true,
+          "seconds": 0.0040623960085213184,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.011401013574113349,
+          "error": 0.01101735438927669,
+          "psd": true,
+          "seconds": 0.012625999981537461,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.01092816905423108,
+          "error": 0.010544689235581144,
+          "psd": true,
+          "seconds": 0.01327110396232456,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.005024198362437057,
+          "error": 0.004642958122898191,
+          "psd": true,
+          "seconds": 0.046961375046521425,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.0049150006778608925,
+          "error": 0.004533801860758912,
+          "psd": true,
+          "seconds": 0.049364853533916175,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.002864075453383618,
+          "error": 0.0024836546227471673,
+          "psd": true,
+          "seconds": 0.18575327063445002,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0028691914495860317,
+          "error": 0.0024887686782762907,
+          "psd": true,
+          "seconds": 0.19580364553257823,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d64_p2",
+      "law": "laplace",
+      "d": 64,
+      "panel": 2,
+      "u": 0.0003566225744582245,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.000592594679680111,
+        "error": 0.00023576077258160875,
+        "psd": true,
+        "seconds": 0.001593833090737462,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.002604334515178885,
+        "error": 0.0022467831762411072,
+        "psd": true,
+        "seconds": 7.470906712114811e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.002604334515178885,
+          "error": 0.0022467831762411072,
+          "psd": true,
+          "seconds": 7.470906712114811e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.000592594679680111,
+          "error": 0.00023576077258160875,
+          "psd": true,
+          "seconds": 0.001593833090737462,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.023659297764369917,
+          "error": 0.02329423775023309,
+          "psd": true,
+          "seconds": 0.0038316871505230665,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.02053029734586245,
+          "error": 0.02016635320391035,
+          "psd": true,
+          "seconds": 0.003941708593629301,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.010807757165203533,
+          "error": 0.010447280300560934,
+          "psd": true,
+          "seconds": 0.012559458613395691,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010389768475879678,
+          "error": 0.01002944067543956,
+          "psd": true,
+          "seconds": 0.01325379207264632,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.004963874576064526,
+          "error": 0.004605481771875697,
+          "psd": true,
+          "seconds": 0.047522979555651546,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.004848590705460173,
+          "error": 0.004490239014102072,
+          "psd": true,
+          "seconds": 0.04996758350171149,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0025906344790384574,
+          "error": 0.002233088025842838,
+          "psd": true,
+          "seconds": 0.18775579147040844,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0025864864268870923,
+          "error": 0.00222894145298051,
+          "psd": true,
+          "seconds": 0.19578729150816798,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d128_p0",
+      "law": "laplace",
+      "d": 128,
+      "panel": 0,
+      "u": 0.0007580690464027574,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0009477236068480323,
+        "error": 0.00018893612051437824,
+        "psd": true,
+        "seconds": 0.0031969589181244373,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.0017407648403249393,
+        "error": 0.0009813761739796653,
+        "psd": true,
+        "seconds": 8.808309212327003e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.0017407648403249393,
+          "error": 0.0009813761739796653,
+          "psd": true,
+          "seconds": 8.808309212327003e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0009477236068480323,
+          "error": 0.00018893612051437824,
+          "psd": true,
+          "seconds": 0.0031969589181244373,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.023578400339302925,
+          "error": 0.02280245723743925,
+          "psd": true,
+          "seconds": 0.007982520502991974,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.021322531465419927,
+          "error": 0.020548298467922287,
+          "psd": true,
+          "seconds": 0.008278687950223684,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.011761233869179589,
+          "error": 0.010994248995433104,
+          "psd": true,
+          "seconds": 0.026691979030147195,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010775688666885712,
+          "error": 0.010009450904450917,
+          "psd": true,
+          "seconds": 0.027963874978013337,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.006179818687194905,
+          "error": 0.005417064911533004,
+          "psd": true,
+          "seconds": 0.09741018700879067,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.00610437326165186,
+          "error": 0.005341676678831756,
+          "psd": true,
+          "seconds": 0.10162783355917782,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.003493425886825525,
+          "error": 0.002732708582392063,
+          "psd": true,
+          "seconds": 0.3866589580429718,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.003501710503264269,
+          "error": 0.0027409869185195234,
+          "psd": true,
+          "seconds": 0.39728031249251217,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d128_p1",
+      "law": "laplace",
+      "d": 128,
+      "panel": 1,
+      "u": 0.0006773661052698969,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0008670753867584202,
+        "error": 0.0001891219540108194,
+        "psd": true,
+        "seconds": 0.0027179999742656946,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.0015482836970778882,
+        "error": 0.0008698688369102487,
+        "psd": true,
+        "seconds": 8.687516674399376e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.0015482836970778882,
+          "error": 0.0008698688369102487,
+          "psd": true,
+          "seconds": 8.687516674399376e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0008670753867584202,
+          "error": 0.0001891219540108194,
+          "psd": true,
+          "seconds": 0.0027179999742656946,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.024361362819940027,
+          "error": 0.02366749515321772,
+          "psd": true,
+          "seconds": 0.007546707987785339,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.020731330925914473,
+          "error": 0.02003992211975823,
+          "psd": true,
+          "seconds": 0.007644521072506905,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.011080313617512196,
+          "error": 0.010395442083362034,
+          "psd": true,
+          "seconds": 0.025494458503089845,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.010562659013055349,
+          "error": 0.009878138120588483,
+          "psd": true,
+          "seconds": 0.026578166405670345,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.00561535498770949,
+          "error": 0.004934185231301861,
+          "psd": true,
+          "seconds": 0.09553831245284528,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.005567609309572023,
+          "error": 0.004886471894468437,
+          "psd": true,
+          "seconds": 0.09939814556855708,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0032113975975924755,
+          "error": 0.002531856200439424,
+          "psd": true,
+          "seconds": 0.3781989373965189,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0031876139614681583,
+          "error": 0.0025080886745440776,
+          "psd": true,
+          "seconds": 0.38125339592806995,
+          "eligible": false
+        }
+      ]
+    },
+    {
+      "cell": "laplace_d128_p2",
+      "law": "laplace",
+      "d": 128,
+      "panel": 2,
+      "u": 0.0006488198713593544,
+      "status": "REFERENCE_LIMITED",
+      "candidate": {
+        "method": "second_order",
+        "n": 0,
+        "bound": 0.0008419677790730431,
+        "error": 0.00019260162228758172,
+        "psd": true,
+        "seconds": 0.002809499856084585,
+        "eligible": false
+      },
+      "gaussian": {
+        "method": "gaussian",
+        "n": 0,
+        "bound": 0.0015963948246159165,
+        "error": 0.000946539180571816,
+        "psd": true,
+        "seconds": 8.745887316763401e-05,
+        "eligible": false
+      },
+      "best": null,
+      "ratio": null,
+      "methods": [
+        {
+          "method": "gaussian",
+          "n": 0,
+          "bound": 0.0015963948246159165,
+          "error": 0.000946539180571816,
+          "psd": true,
+          "seconds": 8.745887316763401e-05,
+          "eligible": false
+        },
+        {
+          "method": "second_order",
+          "n": 0,
+          "bound": 0.0008419677790730431,
+          "error": 0.00019260162228758172,
+          "psd": true,
+          "seconds": 0.002809499856084585,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 4096,
+          "bound": 0.02445232726680997,
+          "error": 0.023787642239618927,
+          "psd": true,
+          "seconds": 0.007664687465876341,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 4096,
+          "bound": 0.02139380871496263,
+          "error": 0.02073110811538495,
+          "psd": true,
+          "seconds": 0.007740458007901907,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 16384,
+          "bound": 0.0118576829185897,
+          "error": 0.011201169546924487,
+          "psd": true,
+          "seconds": 0.025280187372118235,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 16384,
+          "bound": 0.011087261409535676,
+          "error": 0.010431247902654858,
+          "psd": true,
+          "seconds": 0.02604487503413111,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 65536,
+          "bound": 0.005720176547825933,
+          "error": 0.005067645312254665,
+          "psd": true,
+          "seconds": 0.1014148750109598,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 65536,
+          "bound": 0.00561761459544304,
+          "error": 0.004965149904104524,
+          "psd": true,
+          "seconds": 0.10535029147285968,
+          "eligible": false
+        },
+        {
+          "method": "sobol",
+          "n": 262144,
+          "bound": 0.0033701628773743337,
+          "error": 0.002719156377370421,
+          "psd": true,
+          "seconds": 0.44007885397877544,
+          "eligible": false
+        },
+        {
+          "method": "quadratic_cv",
+          "n": 262144,
+          "bound": 0.0033482600697630352,
+          "error": 0.002697267780735939,
+          "psd": true,
+          "seconds": 0.47644450003281236,
+          "eligible": false
+        }
+      ]
+    }
+  ]
+}

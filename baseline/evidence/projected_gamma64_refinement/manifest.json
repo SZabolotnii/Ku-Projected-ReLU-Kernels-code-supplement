@@ -1,0 +1,15 @@
+{
+  "evidence/projected_gamma64_refinement/endpoint_guards.json": "482f989de9eaaf7ea057162f7a37e0e4fd8049df1af37389ace4888aa8e05eda",
+  "evidence/projected_gamma64_refinement/diagnostics.json": "d01e60b15b31fc52c47a14ed1b22442273acae3d9c132896e71e3137b0888dd2",
+  "evidence/projected_gamma64_refinement/reference_gamma1_d64_p2.npz": "f63ce38afd80bb716f8a417695727631725bdfcb10a7d29d34e8a7eb164966c2",
+  "evidence/projected_gamma64_refinement/reference_gamma1_d64_p0.npz": "4e4cbc5f9c98239d196b88b877a6f84337a368977a1e49bf4134e14bbf75a2b1",
+  "evidence/projected_gamma64_refinement/reference_gamma1_d64_p1.npz": "c39a21d3b6b32e48f18e0d6d1b7a5aba31a120e89c613d5cdebcf353163936a9",
+  "scripts/projected_gamma64_refine.py": "0f03799093bfb5fb35e7c023360f3ab3705d7ffc530d43c98803ce4ff3faad05",
+  "PROJECTED_GAMMA64_REFINEMENT_SPEC.md": "7888fdd9722bb47e82f05a3c7a4cd7959b8f668df94274e0440676262d309d4d",
+  "evidence/projected_generalization/manifest.json": "c185982a2e0cf99be67947eaf7ed69a59353dbddabf02fe4bdfc30bf2b5b3886",
+  "evidence/projected_generalization/analysis_manifest.json": "4166136985e78b200f87e8b8454d53bec0865dd8f279947000a6165b215807c6",
+  "scripts/projected_generalize.py": "4ac38043684894d665590d83b66afc98d080d7ba49e7fafeb1f932e3019c905f",
+  "scripts/projected_core.py": "e58a67445203db7b8a45de61437b4dff357813f8ec688802439cb57da3af4517",
+  "scripts/projected_refine.py": "bbf02882a8a28dcfeb8ffc75743122fa836777a0f980e71e45942dc530015961",
+  "scripts/projected_study.py": "dd4160a20b57203e01e80fda0f25099c1c87cbdab367d26217da9a26a2a85404"
+}

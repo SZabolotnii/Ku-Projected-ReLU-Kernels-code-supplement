@@ -1,0 +1,16 @@
+{
+  "run_id": "h6-digits-2026-10-26",
+  "spec": "experiments/2026-10-26-h6-digits/spec_h6.py",
+  "spec_git": "78407ff",
+  "finished": "2026-10-26T12:58:55+00:00",
+  "python": "3.13.12",
+  "cells_total": 2,
+  "cells_computed": 2,
+  "cells_reused": 0,
+  "grid_seconds": 26221.8,
+  "controls": [
+    "pair-parallel CF equals kg.kernel_cf",
+    "digits split and preprocessing as frozen",
+    "Gaussian law: candidate equals arc-cosine on digits"
+  ]
+}
