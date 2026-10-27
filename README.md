@@ -23,6 +23,7 @@ matches the files the manuscript was built from byte for byte.
 | `theory/statements.tex` | the statements and proofs, as copied into the article | §3, Appendix A |
 | `Lean/`, `lakefile.lean`, `lake-manifest.json`, `lean-toolchain` | Lean 4 project (v4.26.0, Mathlib) checking the steps listed in Appendix A | Appendix A |
 | `paper/scripts/make_tex.py` | numbers, tables and figures of the article from the stored results | all |
+| `tools/mc_kernel.py` | the runner that executed every run: controls first (a failed control aborts with exit 2), then each cell written to disk and hashed before it counts; MIT, copyright OmegaWiki Contributors, unchanged since 2026-08-31 | Appendix B |
 
 ## Reproduce
 
@@ -34,8 +35,12 @@ python paper/scripts/make_tex.py                               # numbers, tables
 python experiments/2026-10-25-kernel-gate/analyze.py --s2      # verdicts of run 1 from the cell files
 ```
 
-To rerun a run from scratch, use `spec.py`, `spec_s2.py` and `h6.py`. They set one BLAS
-thread before NumPy loads, run the controls first, and abort on a failed control. Run 1
+To rerun a run from scratch, pass its specification to the runner, for example
+`python tools/mc_kernel.py experiments/2026-10-25-kernel-gate/spec.py --resume`
+(`spec_s2.py` for timing session 2, `experiments/2026-10-26-h6-digits/spec_h6.py` for
+run 2). The specifications set one BLAS thread before NumPy loads; the runner runs the
+controls first and aborts on a failed control. The docstrings of the specifications
+say `$AUTOSCI/tools/mc_kernel.py`, the runner's location in the working repository. Run 1
 took about 5.8 hours of wall time on one machine. The H6 characteristic-function
 reference is computed once and cached under `experiments/2026-10-26-h6-digits/cache/`,
 which is not included here; a rerun recomputes it.
