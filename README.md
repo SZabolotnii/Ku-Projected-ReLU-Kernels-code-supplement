@@ -16,6 +16,7 @@ matches the files the manuscript was built from byte for byte.
 |---|---|---|
 | `experiments/2026-10-25-kernel-gate/` | Run 1, the kernel study: `SPEC.md` (pre-registered 25 October 2026), `kg.py` (candidate, competitors, reference, panels), `spec.py` / `spec_s2.py` (timing sessions 1 and 2), `calibrate_h5.py` and the frozen `h5_rule.json`, `analyze.py`, `results/`, `analysis/` | §4, Tables 1–3, Figures 1–2, Appendix B |
 | `experiments/2026-10-26-h6-digits/` | Run 2, the handwritten-digits benchmark of H6: `SPEC.md`, `h6.py`, `spec_h6.py`, `results/` | §4.5, digits table |
+| `experiments/2026-10-28-h6-spectrum/` | Post hoc, outside the registered study: `spectrum.py` reports the smallest eigenvalue of the digits training kernel against the ridge for each kernel of run 2, after reproducing run 2's stored eigenvalues as a control; `results/`. It reads the cached run-2 reference, so it needs `spec_h6.py` to have been run first | digits table |
 | `experiments/paper-derived/DERIVED.json` | every derived value the article prints (medians, ranges, counts, slopes), keyed by name | all sections |
 | `baseline/scripts/`, `baseline/evidence/` | the exploratory series that selected the two primary cells, and the panels H5 was calibrated on; `projected_core.py` and `projected_refine.py` hold the frozen candidate and competitors that `kg.py` imports | §4.1, §4.5 |
 | `baseline/*_SPEC.md` | specifications of the exploratory steps | §4.1 |

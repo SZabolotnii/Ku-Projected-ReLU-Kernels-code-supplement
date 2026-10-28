@@ -30,6 +30,7 @@ S1 = f"{GATE}/results/kernel-gate-2026-10-25-s1"
 S2 = f"{GATE}/results/kernel-gate-2026-10-25-s2"
 ANALYSIS = f"{GATE}/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json"
 H6 = "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26"
+SPECTRUM = "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28"  # post hoc
 TARGET = 0.003
 LAWS = {"gamma1": "Gamma(1)", "gamma4": "Gamma(4)", "laplace": "Laplace", "uniform": "uniform"}
 
@@ -167,6 +168,33 @@ macro("hTwoLo", h2["lower95"], "{:.2f}", ANALYSIS, "H2.all_panels.lower95", "slo
 macro("hTwoHi", h2["upper95"], "{:.2f}", ANALYSIS, "H2.all_panels.upper95", "slope CI upper")
 macro("hTwoN", h2["n"], "{:d}", ANALYSIS, "H2.all_panels.n", "panels in the slope fit")
 
+
+def slope_fit(rows):
+    """OLS slope of log error on log d with its HC3 (heteroscedasticity-robust) 95% upper bound."""
+    x, y = np.log([r[0] for r in rows]), np.log([r[1] for r in rows])
+    X = np.c_[np.ones_like(x), x]
+    beta = np.linalg.lstsq(X, y, rcond=None)[0]
+    e = y - X @ beta
+    inv = np.linalg.inv(X.T @ X)
+    h = np.einsum("ij,jk,ik->i", X, inv, X)
+    V = inv @ (X.T * (e / (1 - h)) ** 2) @ X @ inv
+    from scipy import stats
+    return float(beta[1]), float(beta[1] + stats.t.ppf(0.975, len(x) - 2) * np.sqrt(V[1, 1]))
+
+
+# post hoc robustness of the H2 slope: the same panels as analyze.py (ref_ok, error > 0)
+h2_pts = [(c["d"], c["candidate_error"]) for c in c1 if c["law"] == "gamma1" and c["geometry"] == "dense"
+          and c["n"] == 32 and c["ref_ok"] and c["candidate_error"] > 0]
+if len(h2_pts) != h2["n"] or abs(slope_fit(h2_pts)[0] - h2["slope"]) > 1e-9:
+    raise SystemExit("post hoc H2 refit does not reproduce ANALYSIS.json")
+macro("hTwoHcUp", slope_fit(h2_pts)[1], "{:.2f}", S1, "HC3 95% upper bound of the H2 OLS slope",
+      "robust slope upper bound", "post hoc; HC3 standard error, same 50 panels as H2")
+no16 = [p for p in h2_pts if p[0] != 16]
+macro("hTwoNoSixteen", slope_fit(no16)[0], "{:.2f}", S1, "H2 OLS slope without d=16",
+      "slope without d=16", "post hoc; 40 panels at d=32..256")
+macro("hTwoNoSixteenUp", slope_fit(no16)[1], "{:.2f}", S1, "HC3 95% upper bound, H2 slope without d=16",
+      "robust upper bound without d=16", "post hoc; HC3, 40 panels")
+
 sweep = [c for c in c1 if c["law"] == "gamma1" and c["geometry"] == "dense" and c["n"] == 32]
 desc = {}
 for law in LAWS:
@@ -198,7 +226,9 @@ plt.close(fig)
 
 # competitor cost ladders, session 1, primary cells
 lines = [r"\begin{tabular}{lrrrrrrrrr}", r"\toprule",
-         r"Cell & $n$ & $\widehat K$ & Sobol & QCV & Cond. & CF & Nodes & O1 & O2 \\",
+         r" & & \multicolumn{5}{c}{Median seconds} & CF & \multicolumn{2}{c}{Panels $>0.003$} \\",
+         r"\cmidrule(lr){3-7}\cmidrule(lr){9-10}",
+         r"Cell & $n$ & $\widehat K$ & Sobol & QCV & Cond. & CF & nodes & O1 & O2 \\",
          r"\midrule"]
 for law, d in (("gamma1", 64), ("laplace", 16)):
     for n in (32, 128):
@@ -240,10 +270,12 @@ for t, nm in ((0.002, "Two"), (0.005, "Five")):
 
 # ---------------------------------------------------------------- run 2 (digits)
 h6 = {c["law"]: c for c in cells(H6)}
-lines = [r"\begin{tabular}{lrrrrrr}", r"\toprule",
-         r"Law & Kernel & Allowance & Test MSE & Rel.\ diff.\ (\%) & Accuracy & Seconds \\", r"\midrule"]
+spec = {c["law"]: c for c in cells(SPECTRUM)}
+lines = [r"\begin{tabular}{lrrrrrrr}", r"\toprule",
+         r"Law & Kernel & Allowance & $\lambda_{\min}/\lambda$ & Test MSE & Rel.\ diff.\ (\%) & Accuracy & Seconds \\",
+         r"\midrule"]
 for law in ("gamma1", "laplace"):
-    v = h6[law]
+    v, sp = h6[law], spec[law]
     for nm, lab in (("ref", "CF reference"), ("candidate", r"$\widehat K$"), ("gaussian", "$K_G$"),
                     ("third", r"order 1 ($+\kappa_3$)"), ("fourth", r"order 2 ($+\kappa_4$)")):
         allow = "--" if nm == "ref" else f"{v[nm + '_allowance']:.4f}"
@@ -254,8 +286,11 @@ for law in ("gamma1", "laplace"):
         acc = f"{v[nm + '_test_acc']:.3f}" if nm + "_test_acc" in v else "--"
         secs = {"candidate": v["candidate_seconds"], "gaussian": v["gaussian_seconds"]}.get(nm)
         secs = f"{secs:.2f}" if secs else "--"
-        lines.append(f"{LAWS[law] if nm == 'ref' else ''} & {lab} & {allow} & {mse:.5f} & {relv} & {acc} & {secs} \\\\")
+        eig = None if nm == "ref" else sp[nm + "_mineig_over_lambda"]
+        eigs = "--" if eig is None else (f"\\ensuremath{{{eig:.1f}}}" if eig < 0 else f"{eig:.1f}")
+        lines.append(f"{LAWS[law] if nm == 'ref' else ''} & {lab} & {allow} & {eigs} & {mse:.5f} & {relv} & {acc} & {secs} \\\\")
         DERIVED[f"tab_digits.{law}.{nm}"] = dict(allowance=None if nm == "ref" else v[nm + "_allowance"], test_mse=mse,
+                                                train_mineig_over_lambda=eig, eig_source=sp["_file"],
                                                 rel_diff_pct=None if nm == "ref" else 100 * v[nm + "_mse_rel"],
                                                 test_acc=v.get(nm + "_test_acc"), seconds={"candidate": v["candidate_seconds"], "gaussian": v["gaussian_seconds"]}.get(nm),
                                                 source=v["_file"])
@@ -271,6 +306,9 @@ for law, nm in (("gamma1", "Gamma"), ("laplace", "Laplace")):
     macro(f"hSix{nm}CandAllow", v["candidate_allowance"], "{:.4f}", f, "candidate_allowance", "K-hat kernel error on digits")
 macro("hSixThird", 100 * h6["gamma1"]["third_mse_rel"], "{:.0f}", h6["gamma1"]["_file"], "third_mse_rel x100", "order-1 MSE inflation (%)")
 macro("hSixFourth", 100 * h6["gamma1"]["fourth_mse_rel"], "{:.1f}", h6["gamma1"]["_file"], "fourth_mse_rel x100", "order-2 MSE gap (%)")
+sp = spec["gamma1"]
+macro("hSixThirdEig", sp["third_mineig_over_lambda"], "{:.1f}", sp["_file"], "third_mineig_over_lambda",
+      "order-1 smallest training eigenvalue over the ridge", "post hoc; smallest eigenvalue of K_train / lambda")
 
 (PAPER / "numbers.tex").write_text("% Generated by scripts/make_tex.py from frozen result files. Do not edit.\n"
                                    + "\n".join(MACROS) + "\n")

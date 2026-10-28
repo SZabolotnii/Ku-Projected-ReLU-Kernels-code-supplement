@@ -1,0 +1,30 @@
+{
+ "control": "stored *_mineig of law=gamma1_part=h6__23d014c2.json reproduced to 1e-9",
+ "note": "post hoc, outside the registered study",
+ "params": {
+  "law": "gamma1",
+  "part": "spectrum"
+ },
+ "values": {
+  "candidate_lambda": 0.000516418154074572,
+  "candidate_mineig_over_lambda": 1.9588051518692335,
+  "candidate_shifted_mineig": 0.0015279806947946432,
+  "candidate_train_mineig": 0.0010115625407200713,
+  "fourth_lambda": 0.000516418154074572,
+  "fourth_mineig_over_lambda": 1.2864373368441624,
+  "fourth_shifted_mineig": 0.0011807577489002428,
+  "fourth_train_mineig": 0.0006643395948256708,
+  "gaussian_lambda": 0.0005,
+  "gaussian_mineig_over_lambda": 2.1303372690558375,
+  "gaussian_shifted_mineig": 0.0015651686345279187,
+  "gaussian_train_mineig": 0.0010651686345279187,
+  "n_train": 1257,
+  "ref_cache": "gamma1_N128_eca443e17c67.npy",
+  "ref_cache_sha256": "5c4b4212bbbdfdf2b672bd56990b0202ac005adfaf148e53e46cd60da50c365c",
+  "ref_norm": 319.4939766506333,
+  "third_lambda": 0.000516418154074572,
+  "third_mineig_over_lambda": -9.169359896749178,
+  "third_shifted_mineig": -0.004218805757850047,
+  "third_train_mineig": -0.004735223911924619
+ }
+}

@@ -152,6 +152,18 @@
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "value": 536.7200306161589
   },
+  "macro.hSixThirdEig": {
+   "field": "third_mineig_over_lambda",
+   "printed": "\\ensuremath{-9.2}",
+   "source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
+   "value": -9.169359896749178
+  },
+  "macro.hTwoHcUp": {
+   "field": "HC3 95% upper bound of the H2 OLS slope",
+   "printed": "\\ensuremath{-1.56}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -1.5604752011005119
+  },
   "macro.hTwoHi": {
    "field": "H2.all_panels.upper95",
    "printed": "\\ensuremath{-1.56}",
@@ -169,6 +181,18 @@
    "printed": "50",
    "source": "experiments/2026-10-25-kernel-gate/analysis/kernel-gate-2026-10-25-s1/ANALYSIS.json",
    "value": 50
+  },
+  "macro.hTwoNoSixteen": {
+   "field": "H2 OLS slope without d=16",
+   "printed": "\\ensuremath{-1.69}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -1.686664302815109
+  },
+  "macro.hTwoNoSixteenUp": {
+   "field": "HC3 95% upper bound, H2 slope without d=16",
+   "printed": "\\ensuremath{-1.63}",
+   "source": "experiments/2026-10-25-kernel-gate/results/kernel-gate-2026-10-25-s1",
+   "value": -1.6295410704809268
   },
   "macro.hTwoSlope": {
    "field": "H2.all_panels.slope",
@@ -318,83 +342,103 @@
   },
   "tab_digits.gamma1.candidate": {
    "allowance": 0.004195188922859402,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
    "rel_diff_pct": 0.08554953695326685,
    "seconds": 8.561901667155325,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "test_acc": 0.9814814814814815,
-   "test_mse": 0.008215664303501504
+   "test_mse": 0.008215664303501504,
+   "train_mineig_over_lambda": 1.9588051518692335
   },
   "tab_digits.gamma1.fourth": {
    "allowance": 0.016614705708230395,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
    "rel_diff_pct": 4.695487050770749,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "test_acc": null,
-   "test_mse": 0.00859407756344628
+   "test_mse": 0.00859407756344628,
+   "train_mineig_over_lambda": 1.2864373368441624
   },
   "tab_digits.gamma1.gaussian": {
    "allowance": 0.06375721507931816,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
    "rel_diff_pct": 0.44582500576155776,
    "seconds": 0.22228787490166724,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "test_acc": 0.9833333333333333,
-   "test_mse": 0.008172045670416418
+   "test_mse": 0.008172045670416418,
+   "train_mineig_over_lambda": 2.1303372690558375
   },
   "tab_digits.gamma1.ref": {
    "allowance": null,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
    "rel_diff_pct": null,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "test_acc": 0.9814814814814815,
-   "test_mse": 0.008208641848410038
+   "test_mse": 0.008208641848410038,
+   "train_mineig_over_lambda": null
   },
   "tab_digits.gamma1.third": {
    "allowance": 0.013980058602031819,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=gamma1_part=spectrum.json",
    "rel_diff_pct": 536.7200306161589,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=gamma1_part=h6__23d014c2.json",
    "test_acc": null,
-   "test_mse": 0.05226606689036722
+   "test_mse": 0.05226606689036722,
+   "train_mineig_over_lambda": -9.169359896749178
   },
   "tab_digits.laplace.candidate": {
    "allowance": 0.0023335002741036765,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=laplace_part=spectrum.json",
    "rel_diff_pct": 0.1893766877092718,
    "seconds": 5.99004404200241,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
    "test_acc": 0.9814814814814815,
-   "test_mse": 0.00812537468875141
+   "test_mse": 0.00812537468875141,
+   "train_mineig_over_lambda": 2.071836804882383
   },
   "tab_digits.laplace.fourth": {
    "allowance": 0.0023335002741036765,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=laplace_part=spectrum.json",
    "rel_diff_pct": 0.1893766877092718,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
    "test_acc": null,
-   "test_mse": 0.00812537468875141
+   "test_mse": 0.00812537468875141,
+   "train_mineig_over_lambda": 2.071836804882383
   },
   "tab_digits.laplace.gaussian": {
    "allowance": 0.012412665250285162,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=laplace_part=spectrum.json",
    "rel_diff_pct": 0.38392115380808844,
    "seconds": 0.1896161250770092,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
    "test_acc": 0.9833333333333333,
-   "test_mse": 0.008172045670416418
+   "test_mse": 0.008172045670416418,
+   "train_mineig_over_lambda": 2.1303372690558375
   },
   "tab_digits.laplace.ref": {
    "allowance": null,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=laplace_part=spectrum.json",
    "rel_diff_pct": null,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
    "test_acc": 0.9814814814814815,
-   "test_mse": 0.00814079144995265
+   "test_mse": 0.00814079144995265,
+   "train_mineig_over_lambda": null
   },
   "tab_digits.laplace.third": {
    "allowance": 0.012412665250285162,
+   "eig_source": "experiments/2026-10-28-h6-spectrum/results/h6-spectrum-2026-10-28/law=laplace_part=spectrum.json",
    "rel_diff_pct": 0.38392115380808844,
    "seconds": null,
    "source": "experiments/2026-10-26-h6-digits/results/h6-digits-2026-10-26/law=laplace_part=h6__ffd5482b.json",
    "test_acc": null,
-   "test_mse": 0.008172045670416418
+   "test_mse": 0.008172045670416418,
+   "train_mineig_over_lambda": 2.1303372690558375
   },
   "tab_gate.gamma1_d64_n128_session1": {
    "kg_fails": 10,

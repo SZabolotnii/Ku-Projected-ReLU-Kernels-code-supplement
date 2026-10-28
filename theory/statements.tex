@@ -242,12 +242,12 @@ Bhattacharya and Rao (1976, \emph{Normal Approximation and Asymptotic Expansions
 Thm.~20.6; p.~216 of the 2010 SIAM edition) prove an Edgeworth expansion for a
 \emph{sequence} of independent mean-zero random vectors in $\R^k$ with positive-definite
 covariance matrices and finite $s$-th absolute moments, $s\ge3$; its proof is that of
-their Thm.~20.1. This paper needs a form that differs in three ways, and assumes it
-rather than citing it: the summands form a triangular array; a single summand may have a
-singular covariance, only the average being normalised; and one remainder sequence
-serves a whole class of arrays (the uniformity clause below). Hypotheses (i)--(ii) and
-the form of the bound follow the pattern of that theorem; only its opening sentence was
-checked against the book. Let $X_{1},\dots,X_{n}$ be independent
+their Thm.~20.1. The assumption below is not claimed to follow from that theorem. It is a
+strengthened, author-supplied triangular-array property, introduced here only to state
+a conditional result, and it differs from the cited theorem in at least three ways: the
+summands form a triangular array; a single summand may have a singular covariance, only
+the average being normalised; and one remainder sequence serves a whole class of arrays
+(the uniformity clause below). Let $X_{1},\dots,X_{n}$ be independent
 mean-zero random vectors in $\R^k$ (a triangular array in $n$) with average covariance
 $n^{-1}\sum_j\mathrm{Cov}(X_j)=I_k$, let $s\ge3$ be an integer, and assume
 (i) $\sup_n n^{-1}\sum_j\E\|X_j\|^{s}<\infty$ and
@@ -296,8 +296,8 @@ $|\E e^{i\langle t,X_j\rangle}|\le\eta_W(\beta/\sqrt2)$; the other terms are at 
 Averaging gives the bound.
 \end{proof}
 
-\begin{theorem}[Remainder rate for dense inputs, conditional on Assumption~\ref{ass:br}]\label{thm:remainder}
-Assume the expansion theorem stated as Assumption~\ref{ass:br} holds as written. Let
+\begin{proposition}[Conditional remainder rate for dense inputs]\label{thm:remainder}
+Assume the triangular-array property stated as Assumption~\ref{ass:br} holds. Let
 $W_1$ satisfy Definition~\ref{def:setting}, $\E|W_1|^5<\infty$ and Cramér's
 condition. Fix $c\ge1$. Then there is $C$, depending only on $c$ and the law of $W_1$,
 such that for every $d$ and every pair of unit vectors $x,y\in\R^d$ with $|\rho|<1$ whose
@@ -305,7 +305,7 @@ $a=x$, $b=(y-\rho x)/s$ satisfy $\max_j(|a_j|,|b_j|)\le c\,d^{-1/2}$,
 \[
 |K(x,y)-\widehat K(x,y)|\le C\,d^{-3/2}.
 \]
-\end{theorem}
+\end{proposition}
 
 \begin{proof}
 Apply Assumption~\ref{ass:br} with $k=2$, $n=d$, $s=5$, $X_j=\sqrt d(a_j,b_j)W_j$, so that

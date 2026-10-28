@@ -1,0 +1,30 @@
+{
+ "control": "stored *_mineig of law=laplace_part=h6__ffd5482b.json reproduced to 1e-9",
+ "note": "post hoc, outside the registered study",
+ "params": {
+  "law": "laplace",
+  "part": "spectrum"
+ },
+ "values": {
+  "candidate_lambda": 0.0005,
+  "candidate_mineig_over_lambda": 2.071836804882383,
+  "candidate_shifted_mineig": 0.0015359184024411915,
+  "candidate_train_mineig": 0.0010359184024411915,
+  "fourth_lambda": 0.0005,
+  "fourth_mineig_over_lambda": 2.071836804882383,
+  "fourth_shifted_mineig": 0.0015359184024411915,
+  "fourth_train_mineig": 0.0010359184024411915,
+  "gaussian_lambda": 0.0005,
+  "gaussian_mineig_over_lambda": 2.1303372690558375,
+  "gaussian_shifted_mineig": 0.0015651686345279187,
+  "gaussian_train_mineig": 0.0010651686345279187,
+  "n_train": 1257,
+  "ref_cache": "laplace_N128_eca443e17c67.npy",
+  "ref_cache_sha256": "986f324c975e8a68e21e33a185564a150df9ba9d471181fd00fd9780bac7161b",
+  "ref_norm": 318.36278704097975,
+  "third_lambda": 0.0005,
+  "third_mineig_over_lambda": 2.1303372690558375,
+  "third_shifted_mineig": 0.0015651686345279187,
+  "third_train_mineig": 0.0010651686345279187
+ }
+}
