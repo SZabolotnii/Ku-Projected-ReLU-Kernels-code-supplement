@@ -17,6 +17,14 @@ authors:
     affiliation: "Uzhhorod University, Uzhhorod, Ukraine"
 version: "1.0.0"
 date-released: "2026-10-29"
+doi: "10.5281/zenodo.23756874"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23756874"
+    description: "Zenodo archive of release v1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.23756873"
+    description: "Zenodo concept DOI (all versions, resolves to the latest)"
 license: MIT
 repository-code: "https://github.com/SZabolotnii/Ku-Projected-ReLU-Kernels-code-supplement"
 url: "https://github.com/SZabolotnii/Ku-Projected-ReLU-Kernels-code-supplement"
